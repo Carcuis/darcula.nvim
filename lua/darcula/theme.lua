@@ -359,7 +359,7 @@ theme.loadPlugins = function()
         -- WhichKey =                              { fg = darcula.accent , style = 'bold'},
         -- WhichKeyGroup =                         { fg = darcula.text },
         -- WhichKeyDesc =                          { fg = darcula.blue, style = 'italic' },
-        -- WhichKeySeperator =                     { fg = darcula.fg },
+        WhichKeySeperator =                     { fg = darcula.number },
         -- WhichKeyFloating =                      { bg = darcula.float },
         -- WhichKeyFloat =                         { bg = darcula.float },
 
