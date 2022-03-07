@@ -144,6 +144,7 @@ theme.loadEditor = function ()
         healthSuccess =         { fg = darcula.green },
         healthWarning =         { fg = darcula.yellow },
         VertSplit =             { fg = darcula.gutter, bg = darcula.gutter },
+        FloatBorder =           { fg = darcula.bg, bg = darcula.menu },
 
         -- Dashboard
         DashboardShortCut =     { fg = darcula.blue },
