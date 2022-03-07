@@ -219,6 +219,7 @@ theme.loadTreeSitter = function ()
         TSURI =                     { fg = darcula.link },    -- Any URI like a link or email.
         TSConditional =             { fg = darcula.keyword },    -- For keywords related to conditionnals.
         TSKeyword =                 { fg = darcula.keyword }, -- For keywords that don't fall in previous categories.
+        TSKeywordOperator =         { fg = darcula.keyword }, -- For keyword operators like `and` or `or`.
         TSRepeat =                  { fg = darcula.keyword },    -- For keywords related to loops.
         TSKeywordFunction =         { fg = darcula.keyword }, -- For keywords used to define a fuction.
         TSFunction =                { fg = darcula.function_name },    -- For fuction (calls and definitions).
