@@ -77,6 +77,9 @@ local darcula = {
         add =           '#384c38',
         change =        '#374752',
         delete =        '#656e76',
+        add_fg =        '#88de88',
+        change_fg =     '#49a8e7',
+        delete_fg =     '#cf5344'
     },
 
     diff = {
