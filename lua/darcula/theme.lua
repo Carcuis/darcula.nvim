@@ -66,6 +66,11 @@ theme.loadSyntax = function ()
         jsonEscape =            { fg = darcula.keyword },
         jsonStringMatch =       { fg = darcula.string },
 
+        pythonTSInclude =       { fg = darcula.keyword },
+
+        vimTSVariableBuiltin =  { fg = darcula.constant },
+        vimTSConstBuiltin =     { fg = darcula.pre_proc },
+
     }
 
     return syntax
