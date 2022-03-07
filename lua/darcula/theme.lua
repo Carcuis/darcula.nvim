@@ -205,7 +205,7 @@ theme.loadTreeSitter = function ()
         TSStringRegex =             { fg = darcula.number }, -- For regexes.
         TSStringEscape =            { fg = darcula.keyword }, -- For escape characters within a string.
         TSSymbol =                  { fg = darcula.yellow },    -- For identifiers referring to symbols or atoms.
-        TSType =                    { fg = darcula.keyword },    -- For types.
+        TSType =                    { fg = darcula.identifier },    -- For types.
         TSTypeBuiltin =             { fg = darcula.function_builtin },    -- For builtin types.
         TSTag =                     { fg = darcula.tag },    -- Tags like html tag names.
         TSTagDelimiter =            { fg = darcula.yellow },    -- Tag delimiter like `<` `>` `/`
