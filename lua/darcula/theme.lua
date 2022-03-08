@@ -118,7 +118,7 @@ theme.loadEditor = function ()
         SpellLocal =            { fg = darcula.cyan, bg = darcula.none, style = 'italic,undercurl' },
         SpellRare =             { fg = darcula.purple, bg = darcula.none, style = 'italic,undercurl' },
         StatusLine =            { fg = darcula.fg, bg = darcula.menu },
-        StatusLineNC =          { fg = darcula.text, bg = darcula.disabled },
+        StatusLineNC =          { fg = darcula.text, bg = darcula.menu },
         StatusLineTerm =        { fg = darcula.fg, bg = darcula.menu },
         StatusLineTermNC =      { fg = darcula.text, bg = darcula.disabled },
         TabLineFill =           { fg = darcula.fg },
