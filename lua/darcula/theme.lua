@@ -100,7 +100,7 @@ theme.loadEditor = function ()
         IncSearch =             { fg = darcula.incsearch, bg = darcula.white, style = 'reverse' },
         LineNr =                { fg = darcula.line_numbers, bg = darcula.gutter },
         CursorLineNr =          { fg = darcula.accent, bg = darcula.gutter },
-        MatchParen =            { fg = darcula.match_brace_fg, bg = darcula.match_brace_bg, style = 'bold' },
+        MatchParen =            { fg = darcula.match_brace.fg, bg = darcula.match_brace.bg, style = 'bold' },
         ModeMsg =               { fg = darcula.accent },
         MoreMsg =               { fg = darcula.accent },
         NonText =               { fg = darcula.sidebar },

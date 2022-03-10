@@ -57,8 +57,11 @@ local darcula = {
     function_name =     '#ffc66d',
     function_builtin =  '#8888c6',
     identifier =        '#b5b6e3',
-    match_brace_fg =    '#ffef28',
-    match_brace_bg =    '#3b514d',
+
+    match_brace = {
+        fg =    '#ffef28',
+        bg =    '#3b514d',
+    },
 
     statusline = {
         a_bg =          '#4e5254',
