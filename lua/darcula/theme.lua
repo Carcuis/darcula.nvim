@@ -346,7 +346,7 @@ theme.loadPlugins = function()
         NvimTreeExecFile =                      { fg = darcula.green },
         NvimTreeSpecialFile =                   { fg = darcula.yellow , style = "bold,underline" },
         NvimTreeFolderName=                     { fg = darcula.fg, style = "bold" },
-        NvimTreeOpenedFolderName=               { fg = darcula.fg, style = "bold" },
+        NvimTreeOpenedFolderName=               { fg = darcula.fg, style = "bold,italic" },
         NvimTreeEmptyFolderName=                { fg = darcula.fg },
         NvimTreeFolderIcon=                     { fg = darcula.accent },
         -- NvimTreeIndentMarker =                  { fg = darcula.disabled },
