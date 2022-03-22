@@ -40,7 +40,7 @@ theme.loadSyntax = function ()
         Repeat =                { fg = darcula.keyword }, -- normal any other keyword
         Function =              { fg = darcula.function_name },
         Comment =               { fg = darcula.comment },
-        Identifier =            { fg = darcula.fg},
+        Identifier =            { fg = darcula.fg },
 
         htmlLink =              { fg = darcula.link, style = "underline" },
         htmlH1 =                { fg = darcula.cyan, style = "bold" },
