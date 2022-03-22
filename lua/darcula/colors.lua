@@ -16,6 +16,7 @@ local darcula = {
 	yellow_lighter =    '#f9f1a5',
 	blue_lighter =      '#3b78ff',
 	purple_lighter =    '#b4009e',
+    dark_green =        '#364135',
 
 	bg =                '#2b2b2b',
 	bg_alt =            '#3a3a3a',
@@ -46,7 +47,7 @@ local darcula = {
     warning =           '#be9117',
     info =              '#756d56',
     hint =              '#5896A6',
-	link =              '#80CBC4',
+	link =              '#287bde',
 
     constant =          '#9876aa',
     keyword =           '#cc7832',
