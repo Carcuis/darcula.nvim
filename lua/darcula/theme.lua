@@ -342,7 +342,7 @@ theme.loadPlugins = function()
 
         -- NvimTree
         NvimTreeNormal =                        { fg = darcula.fg, bg = darcula.sidebar },
-        NvimTreeRootFolder =                    { fg = darcula.keyword, style = "bold" },
+        NvimTreeRootFolder =                    { fg = darcula.keyword, style = "bold,underline" },
         NvimTreeGitDirty =                      { fg = darcula.git.dirty_file },
         NvimTreeGitNew =                        { fg = darcula.git.new_file },
         NvimTreeGitStaged =                     { fg = darcula.git.dirty_file },
