@@ -135,7 +135,7 @@ theme.loadEditor = function ()
         WildMenu =              { fg = darcula.orange, bg = darcula.none, style = 'bold' },
         CursorColumn =          { fg = darcula.none, bg = darcula.cursorline },
         CursorLine =            { fg = darcula.none, bg = darcula.cursorline },
-        ToolbarLine =           { fg = darcula.fg, bg = darcula.bg_alt },
+        ToolbarLine =           { fg = darcula.fg, bg = darcula.bg_alt_2 },
         ToolbarButton =         { fg = darcula.fg, bg = darcula.none, style = 'bold' },
         NormalMode =            { fg = darcula.accent, bg = darcula.none, style = 'reverse' },
         InsertMode =            { fg = darcula.green, bg = darcula.none, style = 'reverse' },
@@ -147,7 +147,6 @@ theme.loadEditor = function ()
         healthError =           { fg = darcula.error },
         healthSuccess =         { fg = darcula.green },
         healthWarning =         { fg = darcula.yellow },
-        VertSplit =             { fg = darcula.gutter, bg = darcula.gutter },
         FloatBorder =           { fg = darcula.bg, bg = darcula.menu },
 
         -- Dashboard
@@ -155,6 +154,7 @@ theme.loadEditor = function ()
         DashboardHeader =       { fg = darcula.red },
         DashboardCenter =       { fg = darcula.cyan },
         DashboardFooter =       { fg = darcula.green, style = "italic" },
+        VertSplit =             { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
 
     }
 
@@ -376,7 +376,10 @@ theme.loadPlugins = function()
         DapStopped =                            { fg = darcula.green },
 
         -- Scrollbar
-        ScrollbarHandle =                       { bg = darcula.scrollbar }
+        ScrollbarHandle =                       { bg = darcula.scrollbar },
+
+        -- IndentBlankline
+        IndentBlanklineChar =                   { fg = darcula.statusline.c_bg },
     }
 
     return plugins

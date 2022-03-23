@@ -18,7 +18,7 @@ local darcula = {
     },
 
     replace = {
-        a = { fg = colors.bg, bg = colors.keyword, gui = 'bold' },
+        a = { fg = colors.bg_alt_1, bg = colors.keyword, gui = 'bold' },
         b = { fg = colors.number, bg = colors.statusline.b_bg },
     },
 
@@ -28,9 +28,9 @@ local darcula = {
     },
 
     inactive = {
-        a = { fg = colors.disabled, bg = colors.bg, gui = 'bold' },
+        a = { fg = colors.disabled, bg = colors.bg_alt_1, gui = 'bold' },
         b = { fg = colors.number, bg = colors.statusline.b_bg },
-        c = { fg = colors.disabled, bg = colors.bg_alt }
+        c = { fg = colors.disabled, bg = colors.bg_alt_2 }
     },
 }
 

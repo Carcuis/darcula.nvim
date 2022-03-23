@@ -19,7 +19,8 @@ local darcula = {
     dark_green =        '#364135',
 
 	bg =                '#2b2b2b',
-	bg_alt =            '#3a3a3a',
+	bg_alt_1 =          '#303030',
+	bg_alt_2 =          '#3a3a3a',
 	fg =                '#a9b7c6',
 	text =              '#bbbbbb',
     string =            '#6a8759',
@@ -98,7 +99,21 @@ local darcula = {
         fold_cl_bg =    '#3a3a3a',
     },
 
+    vertsplit = {
+        fg =            '#313335',
+        bg =            '#313335',
+    },
+
 	none =              'NONE'
 }
+
+if vim.g.darcula_transparent == 1 then
+    darcula.bg =                'NONE'
+    darcula.sidebar =           'NONE'
+    darcula.gutter =            'NONE'
+    darcula.vertsplit.fg =      '#3c3f41'
+    darcula.vertsplit.bg =      'NONE'
+    darcula.fold.fold_cl_bg =   'NONE'
+end
 
 return darcula
