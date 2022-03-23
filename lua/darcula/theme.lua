@@ -147,14 +147,8 @@ theme.loadEditor = function ()
         healthError =           { fg = darcula.error },
         healthSuccess =         { fg = darcula.green },
         healthWarning =         { fg = darcula.yellow },
-        FloatBorder =           { fg = darcula.bg, bg = darcula.menu },
-
-        -- Dashboard
-        DashboardShortCut =     { fg = darcula.blue },
-        DashboardHeader =       { fg = darcula.red },
-        DashboardCenter =       { fg = darcula.cyan },
-        DashboardFooter =       { fg = darcula.green, style = "italic" },
         VertSplit =             { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
+        FloatBorder =           { fg = darcula.number, bg = darcula.menu },
 
     }
 
@@ -290,6 +284,12 @@ theme.loadPlugins = function()
         CocHighlightText =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "text" references
         CocHighlightRead =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "read" references
         CocHighlightWrite =                     { bg = darcula.lsp_highlight.hl_bg_write }, -- used for highlighting "write" references
+
+        -- Dashboard
+        DashboardShortCut =                     { fg = darcula.blue },
+        DashboardHeader =                       { fg = darcula.red },
+        DashboardCenter =                       { fg = darcula.cyan },
+        DashboardFooter =                       { fg = darcula.green, style = "italic" },
 
         -- LspTrouble
         LspTroubleText =                        { fg = darcula.text },
