@@ -25,6 +25,7 @@ local darcula = {
 	text =              '#bbbbbb',
     string =            '#6a8759',
 	comment =           '#808080',
+    special_comment =   '#629755',
 	selection =         '#214283',
 	menu =              '#46484a',
     menu_scroll_bar =   '#616263',

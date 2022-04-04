@@ -29,7 +29,7 @@ theme.loadSyntax = function ()
         SpecialChar =           { fg = darcula.keyword }, -- special character in a constant
         Tag =                   { fg = darcula.tag }, -- you can use CTRL-] on this
         Delimiter =             { fg = darcula.keyword }, -- character that needs attention like , or .
-        SpecialComment =        { fg = darcula.comment, style = 'italic' }, -- special things inside a comment
+        SpecialComment =        { fg = darcula.special_comment, style = 'italic' }, -- special things inside a comment
         Debug =                 { fg = darcula.red }, -- debugging statements
         Underlined =            { fg = darcula.link, style = 'underline' }, -- text that stands out, HTML links
         Ignore =                { fg = darcula.disabled }, -- left blank, hidden
