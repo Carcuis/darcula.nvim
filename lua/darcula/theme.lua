@@ -377,6 +377,18 @@ theme.loadPlugins = function()
 
         -- Scrollbar
         ScrollbarHandle =                       { bg = darcula.scrollbar },
+        ScrollbarError =                        { fg = darcula.error, style = "bold" },
+        ScrollbarErrorHandle =                  { fg = darcula.error, bg = darcula.scrollbar },
+        ScrollbarHint =                         { fg = darcula.hint, style = "bold" },
+        ScrollbarHintHandle =                   { fg = darcula.hint, bg = darcula.scrollbar },
+        ScrollbarInfo =                         { fg = darcula.info, style = "bold" },
+        ScrollbarInfoHandle =                   { fg = darcula.info, bg = darcula.scrollbar },
+        ScrollbarWarn =                         { fg = darcula.warning, style = "bold" },
+        ScrollbarWarnHandle =                   { fg = darcula.warning, bg = darcula.scrollbar },
+        ScrollbarSearch =                       { fg = darcula.search, style = "bold" },
+        ScrollbarSearchHandle =                 { fg = darcula.search, bg = darcula.scrollbar },
+        ScrollbarMisc =                         { bg = darcula.scrollbar, style = "bold" },
+        ScrollbarMiscHandle =                   { bg = darcula.scrollbar },
 
         -- IndentBlankline
         IndentBlanklineChar =                   { fg = darcula.statusline.c_bg },
