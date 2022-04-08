@@ -332,10 +332,12 @@ theme.loadPlugins = function()
         GitSignsDeleteLn =                      { fg = darcula.git.none, bg = darcula.git.delete }, -- diff mode: Deleted line |diff.txt|
 
         -- Telescope
-        TelescopePromptBorder =                 { fg = darcula.keyword },
-        TelescopeResultsBorder =                { fg = darcula.keyword },
-        TelescopePreviewBorder =                { fg = darcula.keyword },
-        TelescopeSelectionCaret =               { fg = darcula.keyword, bg = darcula.selection },
+        -- TelescopePromptBorder =                 { fg = darcula.keyword },
+        -- TelescopeResultsBorder =                { fg = darcula.keyword },
+        -- TelescopePreviewBorder =                { fg = darcula.keyword },
+        TelescopeBorder =                       { fg = darcula.number },
+        TelescopePromptPrefix =                 { fg = darcula.special_comment },
+        TelescopeSelectionCaret =               { fg = darcula.special_comment, bg = darcula.selection },
         TelescopeSelection =                    { bg = darcula.selection },
         TelescopeMatching =                     { fg = darcula.keyword },
         TelescopeNormal =                       { fg = darcula.fg },
