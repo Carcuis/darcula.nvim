@@ -75,6 +75,8 @@ theme.loadSyntax = function ()
         vimTSVariableBuiltin =  { fg = darcula.constant },
         vimTSConstBuiltin =     { fg = darcula.pre_proc },
 
+        cppTSPunctDelimiter =   { fg = darcula.keyword },
+
     }
 
     return syntax
