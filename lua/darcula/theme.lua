@@ -194,7 +194,7 @@ theme.loadTreeSitter = function ()
         TSFloat =                   { fg = darcula.number },    -- For floats.
         TSFuncMacro =               { fg = darcula.macro_name },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         TSInclude =                 { fg = darcula.pre_proc },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-        TSLabel =                   { fg = darcula.red }, -- For labels: `label:` in C and `:label:` in Lua.
+        TSLabel =                   { fg = darcula.keyword }, -- For labels: `label:` in C and `:label:` in Lua.
         TSNamespace =               { fg = darcula.identifier },    -- For identifiers referring to modules and namespaces.
         --TSNone =                    { },    -- TODO: docs
         TSNumber =                  { fg = darcula.number },    -- For all numbers
