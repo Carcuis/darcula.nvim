@@ -103,7 +103,7 @@ theme.loadEditor = function ()
         ErrorMsg =              { fg = darcula.yellow },
         Folded =                { fg = darcula.disabled, bg = darcula.none, style = 'italic' },
         FoldColumn =            { fg = darcula.fold.fold_cl_fg, bg = darcula.fold.fold_cl_bg },
-        IncSearch =             { fg = darcula.incsearch, bg = darcula.white, style = 'reverse' },
+        IncSearch =             { bg = darcula.incsearch },
         LineNr =                { fg = darcula.line_numbers, bg = darcula.gutter },
         CursorLineNr =          { fg = darcula.accent, bg = darcula.gutter },
         MatchParen =            { fg = darcula.match_brace.fg, bg = darcula.match_brace.bg, style = 'bold' },
@@ -396,6 +396,13 @@ theme.loadPlugins = function()
 
         -- IndentBlankline
         IndentBlanklineChar =                   { fg = darcula.statusline.c_bg },
+
+        -- Nvim Hlslens
+        HlSearchNear =                          { bg = darcula.incsearch },
+        HlSearchLens =                          { bg = darcula.search },
+        HlSearchLensNear =                      { bg = darcula.incsearch },
+        HlSearchFloat =                         { bg = darcula.incsearch },
+
     }
 
     return plugins
