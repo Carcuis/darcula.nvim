@@ -332,6 +332,7 @@ theme.loadPlugins = function()
         GitSignsDelete =                        { fg = darcula.git.delete, bg = darcula.gutter }, -- diff mode: Deleted line |diff.txt|
         GitSignsDeleteNr =                      { fg = darcula.git.delete_fg, bg = darcula.gutter }, -- diff mode: Deleted line |diff.txt|
         GitSignsDeleteLn =                      { fg = darcula.git.none, bg = darcula.git.delete }, -- diff mode: Deleted line |diff.txt|
+        GitSignsCurrentLineBlame =              { fg = darcula.git.add_fg },
 
         -- Telescope
         -- TelescopePromptBorder =                 { fg = darcula.keyword },
