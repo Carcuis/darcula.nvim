@@ -299,14 +299,14 @@ theme.loadPlugins = function()
         LspTroubleNormal =                      { fg = darcula.fg, bg = darcula.sidebar },
 
         -- Diff
-        -- diffAdded =                             { fg = darcula.green },
-        -- diffRemoved =                           { fg = darcula.red },
-        -- diffChanged =                           { fg = darcula.yellow },
-        -- diffOldFile =                           { fg = darcula.yelow },
-        -- diffNewFile =                           { fg = darcula.orange },
-        -- diffFile =                              { fg = darcula.blue },
-        -- diffLine =                              { fg = darcula.comment },
-        -- diffIndexLine =                         { fg = darcula.purple },
+        diffAdded =                             { fg = darcula.green },
+        diffRemoved =                           { fg = darcula.red },
+        diffChanged =                           { fg = darcula.yellow },
+        diffOldFile =                           { style = "bold" },
+        diffNewFile =                           { style = "bold" },
+        diffFile =                              { style = "bold" },
+        diffLine =                              { fg = darcula.comment },
+        diffIndexLine =                         { fg = darcula.comment },
 
         -- Neogit
         NeogitBranch =                          { fg = darcula.paleblue },
