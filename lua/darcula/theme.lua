@@ -89,7 +89,7 @@ theme.loadEditor = function ()
 
     local editor = {
         Normal =                { fg = darcula.fg, bg = darcula.bg },
-        NormalFloat =           { fg = darcula.fg, bg = darcula.menu }, -- normal text and background color
+        NormalFloat =           { fg = darcula.fg, bg = darcula.gutter }, -- normal text and background color
         ColorColumn =           { fg = darcula.none, bg = darcula.active }, --  used for the columns set with 'colorcolumn'
         Conceal =               { fg = darcula.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor =                { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- the character under the cursor
@@ -110,8 +110,8 @@ theme.loadEditor = function ()
         ModeMsg =               { fg = darcula.accent },
         MoreMsg =               { fg = darcula.accent },
         NonText =               { fg = darcula.sidebar },
-        Pmenu =                 { fg = darcula.text, bg = darcula.menu },
-        PmenuSel =              { fg = darcula.accent, bg = darcula.active },
+        Pmenu =                 { fg = darcula.text, bg = darcula.gutter },
+        PmenuSel =              { fg = darcula.fg, bg = darcula.active, style = 'bold' },
         PmenuSbar =             { fg = darcula.menu, bg = darcula.menu },
         PmenuThumb =            { fg = darcula.menu_scroll_bar, bg = darcula.menu_scroll_bar },
         Question =              { fg = darcula.keyword },
