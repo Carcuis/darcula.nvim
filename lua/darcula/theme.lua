@@ -150,7 +150,7 @@ theme.loadEditor = function ()
         healthSuccess =         { fg = darcula.green },
         healthWarning =         { fg = darcula.yellow },
         VertSplit =             { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
-        FloatBorder =           { fg = darcula.number, bg = darcula.menu },
+        FloatBorder =           { fg = darcula.hint, bg = darcula.gutter, style = 'bold' },
 
     }
 
@@ -338,7 +338,7 @@ theme.loadPlugins = function()
         -- TelescopePromptBorder =                 { fg = darcula.keyword },
         -- TelescopeResultsBorder =                { fg = darcula.keyword },
         -- TelescopePreviewBorder =                { fg = darcula.keyword },
-        TelescopeBorder =                       { fg = darcula.number },
+        TelescopeBorder =                       { fg = darcula.hint, style = "bold" },
         TelescopePromptPrefix =                 { fg = darcula.special_comment },
         TelescopeSelectionCaret =               { fg = darcula.special_comment, bg = darcula.selection },
         TelescopeSelection =                    { bg = darcula.selection },
