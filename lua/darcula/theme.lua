@@ -150,7 +150,7 @@ theme.loadEditor = function ()
         healthSuccess =         { fg = darcula.green },
         healthWarning =         { fg = darcula.yellow },
         VertSplit =             { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
-        FloatBorder =           { fg = darcula.hint, bg = darcula.gutter, style = 'bold' },
+        FloatBorder =           { fg = darcula.hint, style = 'bold' },
 
     }
 
