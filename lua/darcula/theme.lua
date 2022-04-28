@@ -191,7 +191,7 @@ theme.loadTreeSitter = function ()
         TSConstBuiltin =            { fg = darcula.keyword },    -- For constant that are built in the language: `nil` in Lua.
         TSConstMacro =              { fg = darcula.macro_name },    -- For constants that are defined by macros: `NULL` in C.
         TSError =                   { fg = darcula.error },    -- For syntax/parser errors.
-        TSException =               { fg = darcula.yellow },    -- For exception related keywords.
+        TSException =               { fg = darcula.keyword },    -- For exception related keywords.
         TSField =                   { fg = darcula.constant }, -- For fields.
         TSFloat =                   { fg = darcula.number },    -- For floats.
         TSFuncMacro =               { fg = darcula.macro_name },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
