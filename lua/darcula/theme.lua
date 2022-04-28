@@ -278,6 +278,13 @@ theme.loadPlugins = function()
 
     local plugins = {
 
+        -- startify
+        StartifyBracket =                       { fg = darcula.disabled },
+        StartifyHeader =                        { fg = darcula.hint, style = 'bold' },
+        StartifyNumber =                        { fg = darcula.number, style = 'bold' },
+        StartifySlash =                         { fg = darcula.disabled },
+        StartifyFile =                          { fg = darcula.text, style = 'bold' },
+
         -- Coc
         CocErrorSign =                          { fg = darcula.error, bg = darcula.gutter },
         CocWarningSign =                        { fg = darcula.warning, bg = darcula.gutter },
