@@ -406,9 +406,9 @@ theme.loadPlugins = function()
         IndentBlanklineChar =                   { fg = darcula.statusline.c_bg },
 
         -- Nvim Hlslens
-        HlSearchNear =                          { bg = darcula.incsearch },
-        HlSearchLens =                          { bg = darcula.search },
-        HlSearchLensNear =                      { bg = darcula.incsearch },
+        HlSearchNear =                          { fg = darcula.text, bg = darcula.incsearch, style = "bold" },
+        HlSearchLens =                          { fg = darcula.text, bg = darcula.search, style = "inverse" },
+        HlSearchLensNear =                      { fg = darcula.text, bg = darcula.incsearch, style = "bold" },
         HlSearchFloat =                         { bg = darcula.incsearch },
 
     }
