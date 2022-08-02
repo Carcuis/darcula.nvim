@@ -290,9 +290,14 @@ theme.loadPlugins = function()
         CocWarningSign =                        { fg = darcula.warning, bg = darcula.gutter },
         CocInfoSign =                           { fg = darcula.info, bg = darcula.gutter },
         CocHintSign =                           { fg = darcula.hint, bg = darcula.gutter },
+        CocErrorVirtualText =                   { fg = darcula.error, bg = darcula.gutter },
+        CocWarningVirtualText =                 { fg = darcula.warning, bg = darcula.gutter },
+        CocInfoVirtualText =                    { fg = darcula.hint, bg = darcula.gutter },
+        CocHintVirtualText =                    { fg = darcula.hint, bg = darcula.gutter },
         CocHighlightText =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "text" references
         CocHighlightRead =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "read" references
         CocHighlightWrite =                     { bg = darcula.lsp_highlight.hl_bg_write }, -- used for highlighting "write" references
+        CocMenuSel =                            { bg = darcula.active, style = 'bold' },
 
         -- Dashboard
         DashboardShortCut =                     { fg = darcula.blue },
