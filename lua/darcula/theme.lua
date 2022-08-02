@@ -34,7 +34,7 @@ theme.loadSyntax = function ()
         Underlined =            { fg = darcula.link, style = 'underline' }, -- text that stands out, HTML links
         Ignore =                { fg = darcula.disabled }, -- left blank, hidden
         Error =                 { fg = darcula.error, style = 'bold,underline' }, -- any erroneous construct
-        Todo =                  { fg = darcula.todo, style = 'bold,italic' }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+        Todo =                  { fg = darcula.todo, style = 'bold,italic,reverse' }, -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
         Conditional =           { fg = darcula.keyword }, -- normal if, then, else, endif, switch, etc.
         Keyword =               { fg = darcula.keyword }, -- normal for, do, while, etc.
         Repeat =                { fg = darcula.keyword }, -- normal any other keyword
