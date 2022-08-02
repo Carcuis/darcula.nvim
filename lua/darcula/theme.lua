@@ -60,6 +60,7 @@ theme.loadSyntax = function ()
         markdownLinkTextDelimiter = { fg = darcula.link, style = "underline" },
 
         helpHyperTextJump =     { fg = darcula.number },
+        helpCommand =           { fg = darcula.keyword },
 
         jsonBraces =            { fg = darcula.fg },
         jsonKeyword =           { fg = darcula.constant },
