@@ -348,13 +348,13 @@ theme.loadPlugins = function()
         GitSignsCurrentLineBlame =              { fg = darcula.git.add_fg },
 
         -- Telescope
-        -- TelescopePromptBorder =                 { fg = darcula.keyword },
-        -- TelescopeResultsBorder =                { fg = darcula.keyword },
-        -- TelescopePreviewBorder =                { fg = darcula.keyword },
+        -- TelescopePromptBorder =                 { fg = darcula.hint },
+        -- TelescopeResultsBorder =                { fg = darcula.hint },
+        -- TelescopePreviewBorder =                { fg = darcula.hint },
         TelescopeBorder =                       { fg = darcula.hint, style = "bold" },
         TelescopePromptPrefix =                 { fg = darcula.special_comment },
         TelescopeSelectionCaret =               { fg = darcula.special_comment, bg = darcula.selection },
-        TelescopeSelection =                    { bg = darcula.selection },
+        TelescopeSelection =                    { bg = darcula.selection, style = "bold" },
         TelescopeMatching =                     { fg = darcula.keyword },
         TelescopeNormal =                       { fg = darcula.fg },
 
