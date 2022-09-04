@@ -105,6 +105,11 @@ local darcula = {
         bg =            '#313335',
     },
 
+    inlay_hint = {
+        fg =            '#787878',
+        bg =            '#333333',
+    },
+
     none =              'NONE'
 }
 

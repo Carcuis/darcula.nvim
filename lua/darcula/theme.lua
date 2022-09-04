@@ -299,6 +299,7 @@ theme.loadPlugins = function()
         CocHighlightRead =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "read" references
         CocHighlightWrite =                     { bg = darcula.lsp_highlight.hl_bg_write }, -- used for highlighting "write" references
         CocMenuSel =                            { bg = darcula.active, style = 'bold' },
+        CocInlayHint =                          { fg = darcula.inlay_hint.fg, bg = darcula.inlay_hint.bg },
 
         -- Dashboard
         DashboardShortCut =                     { fg = darcula.blue },
