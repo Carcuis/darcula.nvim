@@ -414,7 +414,7 @@ theme.loadPlugins = function()
 
         -- Nvim Hlslens
         HlSearchNear =                          { fg = darcula.text, bg = darcula.incsearch, style = "bold" },
-        HlSearchLens =                          { fg = darcula.text, bg = darcula.search, style = "inverse" },
+        HlSearchLens =                          { fg = darcula.text, bg = darcula.search, style = "reverse" },
         HlSearchLensNear =                      { fg = darcula.text, bg = darcula.incsearch, style = "bold" },
         HlSearchFloat =                         { bg = darcula.incsearch },
 
