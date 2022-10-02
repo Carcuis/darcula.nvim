@@ -39,7 +39,7 @@ theme.loadSyntax = function ()
         Keyword =               { fg = darcula.keyword }, -- normal for, do, while, etc.
         Repeat =                { fg = darcula.keyword }, -- normal any other keyword
         Function =              { fg = darcula.function_name },
-        Comment =               { fg = darcula.comment },
+        Comment =               { fg = darcula.comment, style = 'italic' },
         Identifier =            { fg = darcula.fg },
 
         htmlLink =              { fg = darcula.link, style = "underline" },
@@ -234,7 +234,7 @@ theme.loadTreeSitter = function ()
         TSFuncBuiltin =             { fg = darcula.function_builtin },    -- For builtin functions: `table.insert` in Lua.
         -- TSVariable =                { fg = darcula.fg }, -- Any variable name that does not have another highlight.
         TSVariableBuiltin =         { fg = darcula.keyword }, -- Variable names that are defined by the languages, like `this` or `self`.
-        TSComment=                  { fg = darcula.comment },
+        TSComment=                  { fg = darcula.comment, style = 'italic' },
     }
 
     return treesitter
