@@ -11,7 +11,7 @@ theme.loadSyntax = function ()
         Structure =             { fg = darcula.keyword }, -- struct, union, enum, etc.
         Constant =              { fg = darcula.constant }, -- any constant
         String =                { fg = darcula.string }, -- Any string
-        Character =             { fg = darcula.keyword }, -- any character constant: 'c', '\n'
+        Character =             { fg = darcula.string }, -- any character constant: 'c', '\n'
         Number =                { fg = darcula.number }, -- a number constant: 5
         Boolean =               { fg = darcula.keyword }, -- a boolean constant: TRUE, false
         Float =                 { fg = darcula.number }, -- a floating point constant: 2.3e10
@@ -186,7 +186,7 @@ theme.loadTreeSitter = function ()
         TSAnnotation =              { fg = darcula.pre_proc },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
         TSAttribute =               { fg = darcula.pre_proc },    -- (unstable) TODO: docs
         TSBoolean=                  { fg = darcula.keyword },    -- For booleans.
-        TSCharacter=                { fg = darcula.keyword },    -- For characters.
+        TSCharacter=                { fg = darcula.string },    -- For characters.
         TSConstructor =             { fg = darcula.function_name }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
         TSConstant =                { fg = darcula.constant },    -- For constants
         TSConstBuiltin =            { fg = darcula.keyword },    -- For constant that are built in the language: `nil` in Lua.
