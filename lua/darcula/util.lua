@@ -16,10 +16,10 @@ end
 
 -- Only define darcula if it's the active colorshceme
 function util.onColorScheme()
-  if vim.g.colors_name ~= "darcula" then
-    vim.cmd [[autocmd! darcula]]
-    vim.cmd [[augroup! darcula]]
-  end
+    if vim.g.colors_name ~= "darcula" then
+        vim.cmd [[autocmd! darcula]]
+        vim.cmd [[augroup! darcula]]
+    end
 end
 
 -- Change the background for the terminal, packer and qf windows
