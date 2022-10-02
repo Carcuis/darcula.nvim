@@ -41,6 +41,7 @@ theme.loadSyntax = function ()
         Function =              { fg = darcula.function_name },
         Comment =               { fg = darcula.comment, style = 'italic' },
         Identifier =            { fg = darcula.fg },
+        EnumMember =            { fg = darcula.constant, style = 'italic' },
 
         htmlLink =              { fg = darcula.link, style = "underline" },
         htmlH1 =                { fg = darcula.constant, style = "bold" },
