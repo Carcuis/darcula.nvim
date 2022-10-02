@@ -3,15 +3,17 @@ local darcula = require('darcula.theme')
 
 -- Go trough the table and highlight the group with the color values
 util.highlight = function (group, color)
-    local style = color.style and "gui=" .. color.style or "gui=NONE"
-    local fg = color.fg and "guifg=" .. color.fg or "guifg=NONE"
-    local bg = color.bg and "guibg=" .. color.bg or "guibg=NONE"
-    local sp = color.sp and "guisp=" .. color.sp or ""
-
-    local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
-
-    vim.cmd(hl)
-    if color.link then vim.cmd("highlight! link " .. group .. " " .. color.link) end
+    if color.style then
+        if type(color.style) == "table" then
+            color = vim.tbl_extend("force", color, color.style)
+        elseif color.style:lower() ~= "none" then
+            for s in string.gmatch(color.style, "([^,]+)") do
+                color[s] = true
+            end
+        end
+        color.style = nil
+    end
+    vim.api.nvim_set_hl(0, group, color)
 end
 
 -- Only define darcula if it's the active colorshceme
