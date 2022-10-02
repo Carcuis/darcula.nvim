@@ -294,6 +294,22 @@ theme.loadPlugins = function()
         CocHighlightWrite =                     { bg = darcula.lsp_highlight.hl_bg_write }, -- used for highlighting "write" references
         CocMenuSel =                            { bg = darcula.active, style = 'bold' },
         CocInlayHint =                          { fg = darcula.inlay_hint.fg, bg = darcula.inlay_hint.bg },
+        CocSemProperty =                        { link = 'TSConstant' },
+        CocSemClass =                           { link = 'TSType' },
+        CocSemEnum =                            { link = 'TSType' },
+        CocSemEnumMember =                      { link = 'EnumMember' },
+        CocSemDefaultLibrary =                  { link = 'TSTypeBuiltin' },
+        CocSemDefaultLibraryClass =             { link = 'TSType' },
+        CocSemDefaultLibraryInterface =         { link = 'TSType' },
+        CocSemDefaultLibraryEnum =              { link = 'TSType' },
+        CocSemDefaultLibraryType =              { link = 'TSType' },
+        CocSemDefaultLibraryNamespace =         { link = 'TSType' },
+        CocSemDeclaration =                     { link = 'TSTypeDeclaration' },
+        CocSemDeclarationClass =                { link = 'TSType' },
+        CocSemDeclarationInterface =            { link = 'TSType' },
+        CocSemDeclarationEnum =                 { link = 'TSType' },
+        CocSemDeclarationType =                 { link = 'TSType' },
+        CocSemDeclarationNamespace =            { link = 'TSType' },
 
         -- Dashboard
         DashboardShortCut =                     { fg = darcula.blue },
