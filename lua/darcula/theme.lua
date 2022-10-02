@@ -373,10 +373,10 @@ theme.loadPlugins = function()
         NvimTreeEmptyFolderName=                { fg = darcula.fg },
         NvimTreeFolderIcon=                     { fg = darcula.accent },
         -- NvimTreeIndentMarker =                  { fg = darcula.disabled },
-        LspDiagnosticsError =                   { fg = darcula.error },
-        LspDiagnosticsWarning =                 { fg = darcula.warning },
-        LspDiagnosticsInformation =             { fg = darcula.info },
-        LspDiagnosticsHint =                    { fg = darcula.hint },
+        NvimTreeLspDiagnosticsError =                   { fg = darcula.error },
+        NvimTreeLspDiagnosticsWarning =                 { fg = darcula.warning },
+        NvimTreeLspDiagnosticsInformation =             { fg = darcula.info },
+        NvimTreeLspDiagnosticsHint =                    { fg = darcula.hint },
 
         -- WhichKey
         -- WhichKey =                              { fg = darcula.accent , style = 'bold'},
