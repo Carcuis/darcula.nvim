@@ -359,25 +359,6 @@ theme.loadPlugins = function()
         TelescopeMatching =                     { fg = darcula.keyword },
         TelescopeNormal =                       { fg = darcula.fg },
 
-        -- NvimTree
-        NvimTreeNormal =                        { fg = darcula.fg, bg = darcula.sidebar },
-        NvimTreeRootFolder =                    { fg = darcula.keyword, style = "bold,underline" },
-        NvimTreeGitDirty =                      { fg = darcula.git.dirty_file },
-        NvimTreeGitNew =                        { fg = darcula.git.new_file },
-        NvimTreeGitStaged =                     { fg = darcula.git.dirty_file },
-        NvimTreeImageFile =                     { fg = darcula.purple },
-        NvimTreeExecFile =                      { fg = darcula.green },
-        NvimTreeSpecialFile =                   { fg = darcula.yellow , style = "bold,underline" },
-        NvimTreeFolderName=                     { fg = darcula.fg, style = "bold" },
-        NvimTreeOpenedFolderName=               { fg = darcula.fg, style = "bold,italic" },
-        NvimTreeEmptyFolderName=                { fg = darcula.fg },
-        NvimTreeFolderIcon=                     { fg = darcula.accent },
-        -- NvimTreeIndentMarker =                  { fg = darcula.disabled },
-        NvimTreeLspDiagnosticsError =                   { fg = darcula.error },
-        NvimTreeLspDiagnosticsWarning =                 { fg = darcula.warning },
-        NvimTreeLspDiagnosticsInformation =             { fg = darcula.info },
-        NvimTreeLspDiagnosticsHint =                    { fg = darcula.hint },
-
         -- WhichKey
         -- WhichKey =                              { fg = darcula.accent , style = 'bold'},
         -- WhichKeyGroup =                         { fg = darcula.text },
@@ -421,6 +402,35 @@ theme.loadPlugins = function()
     }
 
     return plugins
+
+end
+
+theme.postLoad = function ()
+    -- Groups loaded after async highlighting
+
+    local groups = {
+        -- NvimTree
+        NvimTreeNormal =                        { fg = darcula.fg, bg = darcula.sidebar },
+        NvimTreeRootFolder =                    { fg = darcula.keyword, style = "bold,underline" },
+        NvimTreeGitDirty =                      { fg = darcula.git.dirty_file },
+        NvimTreeGitNew =                        { fg = darcula.git.new_file },
+        NvimTreeGitStaged =                     { fg = darcula.git.dirty_file },
+        NvimTreeImageFile =                     { fg = darcula.purple },
+        NvimTreeExecFile =                      { fg = darcula.green },
+        NvimTreeSpecialFile =                   { fg = darcula.yellow , style = "bold,underline" },
+        NvimTreeFolderName=                     { fg = darcula.fg, style = "bold" },
+        NvimTreeOpenedFolderName=               { fg = darcula.fg, style = "bold,italic" },
+        NvimTreeEmptyFolderName=                { fg = darcula.fg },
+        NvimTreeFolderIcon=                     { fg = darcula.accent },
+        -- NvimTreeIndentMarker =                  { fg = darcula.disabled },
+        NvimTreeLspDiagnosticsError =           { fg = darcula.error },
+        NvimTreeLspDiagnosticsWarning =         { fg = darcula.warning },
+        NvimTreeLspDiagnosticsInformation =     { fg = darcula.info },
+        NvimTreeLspDiagnosticsHint =            { fg = darcula.hint },
+
+    }
+
+    return groups
 
 end
 
