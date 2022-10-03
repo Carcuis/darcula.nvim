@@ -72,6 +72,12 @@ theme.loadSyntax = function ()
         jsonEscape =            { fg = darcula.keyword },
         jsonStringMatch =       { fg = darcula.string },
 
+        ["@include.python"] =   { link = 'TSKeyword' },
+        ["@type.cpp"] =         { link = 'TSKeyword' },
+        ["@punctuation.delimiter.cpp"] =    { link = 'TSKeyword' },
+        ["@variable.builtin.vim"] =         { link = 'TSTypeBuiltin' },
+        ["@constant.builtin.vim"] =         { link = 'TSAttribute' },
+
     }
 
     return syntax
