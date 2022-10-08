@@ -94,7 +94,7 @@ function util.load()
     -- load the rest later ( lsp, treesitter, plugins )
     async:send()
 
-    -- load highlights that conflict with async loadding
+    -- load highlights that conflict with async loading
     local post_load = darcula.postLoad()
     for group, colors in pairs(post_load) do
         util.highlight(group, colors)
