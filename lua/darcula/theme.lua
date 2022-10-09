@@ -221,7 +221,7 @@ theme.loadTreeSitter = function ()
         TSEmphasis =                { fg = darcula.paleblue },    -- For text to be represented with emphasis.
         TSUnderline =               { fg = darcula.fg, style = 'underline' },    -- For text to be represented with an underline.
         -- TSStrike =                  { },    -- For strikethrough text.
-        TSTitle =                   { fg = darcula.fg, style = 'bold' },    -- Text that is part of a title.
+        -- TSTitle =                   { fg = darcula.fg, style = 'bold' },    -- Text that is part of a title.
         -- TSLiteral =                 { fg = darcula.fg },    -- Literal text.
         TSURI =                     { fg = darcula.link },    -- Any URI like a link or email.
         TSConditional =             { fg = darcula.keyword },    -- For keywords related to conditionnals.
