@@ -91,7 +91,7 @@ theme.loadEditor = function ()
 
     local editor = {
         Normal =                { fg = darcula.fg, bg = darcula.bg },
-        NormalFloat =           { fg = darcula.fg, bg = darcula.gutter }, -- normal text and background color
+        NormalFloat =           { fg = darcula.fg, bg = darcula.float_bg }, -- normal text and background color
         ColorColumn =           { fg = darcula.none, bg = darcula.active }, --  used for the columns set with 'colorcolumn'
         Conceal =               { fg = darcula.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor =                { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- the character under the cursor
@@ -369,12 +369,12 @@ theme.loadPlugins = function()
         -- TelescopePromptBorder =                 { fg = darcula.hint },
         -- TelescopeResultsBorder =                { fg = darcula.hint },
         -- TelescopePreviewBorder =                { fg = darcula.hint },
-        TelescopeBorder =                       { fg = darcula.hint, style = "bold" },
+        TelescopeBorder =                       { fg = darcula.hint, bg = darcula.float_bg, style = "bold" },
         TelescopePromptPrefix =                 { fg = darcula.special_comment },
         TelescopeSelectionCaret =               { fg = darcula.special_comment, bg = darcula.selection },
         TelescopeSelection =                    { bg = darcula.selection, style = "bold" },
         TelescopeMatching =                     { fg = darcula.keyword },
-        TelescopeNormal =                       { fg = darcula.fg },
+        TelescopeNormal =                       { fg = darcula.fg, bg = darcula.float_bg },
 
         -- WhichKey
         -- WhichKey =                              { fg = darcula.accent , style = 'bold'},
