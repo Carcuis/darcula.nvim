@@ -77,6 +77,7 @@ theme.loadSyntax = function ()
         ["@punctuation.delimiter.cpp"] =    { link = 'TSKeyword' },
         ["@variable.builtin.vim"] =         { link = 'TSTypeBuiltin' },
         ["@constant.builtin.vim"] =         { link = 'TSAttribute' },
+        ["@variable.bash"] =    { fg = darcula.text },
 
     }
 
