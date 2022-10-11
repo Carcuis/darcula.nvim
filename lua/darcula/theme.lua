@@ -232,7 +232,7 @@ theme.loadTreeSitter = function ()
         TSFunction =                { fg = darcula.function_name },    -- For fuction (calls and definitions).
         TSMethod =                  { fg = darcula.function_name },    -- For method calls and definitions.
         TSFuncBuiltin =             { fg = darcula.function_builtin },    -- For builtin functions: `table.insert` in Lua.
-        -- TSVariable =                { fg = darcula.fg }, -- Any variable name that does not have another highlight.
+        TSVariable =                { fg = darcula.fg }, -- Any variable name that does not have another highlight.
         TSVariableBuiltin =         { fg = darcula.keyword }, -- Variable names that are defined by the languages, like `this` or `self`.
         TSComment=                  { fg = darcula.comment, style = 'italic' },
     }
