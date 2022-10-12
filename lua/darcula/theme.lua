@@ -416,6 +416,9 @@ theme.loadPlugins = function()
         HlSearchLensNear =                      { fg = darcula.text, bg = darcula.incsearch, style = "bold" },
         HlSearchFloat =                         { bg = darcula.incsearch },
 
+        -- vim-trailing-whitespace
+        ExtraWhitespace =                       { bg = darcula.diff.delete },
+
     }
 
     return plugins
