@@ -132,7 +132,7 @@ theme.loadEditor = function ()
         TabLineFill =           { fg = darcula.fg },
         TablineSel =            { fg = darcula.bg, bg = darcula.accent },
         Tabline =               { fg = darcula.fg },
-        Title =                 { fg = darcula.pre_proc, bg = darcula.none, style = 'bold' },
+        Title =                 { fg = darcula.pre_proc, style = 'bold' },
         Visual =                { fg = darcula.none, bg = darcula.selection },
         VisualNOS =             { fg = darcula.none, bg = darcula.selection },
         WarningMsg =            { fg = darcula.yellow },
