@@ -22,8 +22,8 @@ theme.loadSyntax = function ()
         PreProc =               { fg = darcula.pre_proc }, -- generic Preprocessor
         Include =               { fg = darcula.pre_proc }, -- preprocessor #include
         Define =                { fg = darcula.pre_proc }, -- preprocessor #define
-        Macro =                 { fg = darcula.pre_proc }, -- same as Define
-        Typedef =               { fg = darcula.red }, -- A typedef
+        Macro =                 { fg = darcula.macro_name }, -- same as Define
+        Typedef =               { fg = darcula.keyword }, -- A typedef
         PreCondit =             { fg = darcula.pre_proc }, -- preprocessor #if, #else, #endif, etc.
         Special =               { fg = darcula.keyword }, -- any special symbol
         SpecialChar =           { fg = darcula.keyword }, -- special character in a constant
