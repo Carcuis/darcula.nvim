@@ -219,12 +219,12 @@ theme.loadTreeSitter = function ()
         -- TSTagDelimiter =             { fg = darcula.yellow },    -- Tag delimiter like `<` `>` `/`
         ["@text"] =                     { fg = darcula.text },    -- For strings considered text in a markup language.
         ["@text.reference"] =           { fg = darcula.yellow }, -- FIXME
-        -- TSEmphasis =                 { fg = darcula.paleblue },    -- For text to be represented with emphasis.
         ["@text.underline"] =           { fg = darcula.fg, style = 'underline' },    -- For text to be represented with an underline.
+        ["@text.title"] =               { fg = darcula.pre_proc, style = 'bold' },    -- Text that is part of a title.
+        ["@text.url"] =                 { fg = darcula.link },    -- Any URI like a link or email.
+        -- TSEmphasis =                 { fg = darcula.paleblue },    -- For text to be represented with emphasis.
         -- TSStrike =                   { },    -- For strikethrough text.
-        -- TSTitle =                    { fg = darcula.fg, style = 'bold' },    -- Text that is part of a title.
         -- TSLiteral =                  { fg = darcula.fg },    -- Literal text.
-        -- TSURI =                      { fg = darcula.link },    -- Any URI like a link or email.
         ["@conditional"] =              { fg = darcula.keyword },    -- For keywords related to conditionnals.
         ["@keyword"] =                  { fg = darcula.keyword }, -- For keywords that don't fall in previous categories.
         ["@keyword.operator"] =         { fg = darcula.keyword }, -- For keyword operators like `and` or `or`.
