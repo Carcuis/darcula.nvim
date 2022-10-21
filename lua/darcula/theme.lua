@@ -184,58 +184,59 @@ theme.loadTreeSitter = function ()
     -- TreeSitter highlight groups
 
     local treesitter = {
-        TSAnnotation =              { fg = darcula.pre_proc },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
-        TSAttribute =               { fg = darcula.pre_proc },    -- (unstable) TODO: docs
-        TSBoolean=                  { fg = darcula.keyword },    -- For booleans.
-        TSCharacter=                { fg = darcula.string },    -- For characters.
-        TSConstructor =             { fg = darcula.function_name }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
-        TSConstant =                { fg = darcula.constant },    -- For constants
-        TSConstBuiltin =            { fg = darcula.keyword },    -- For constant that are built in the language: `nil` in Lua.
-        TSConstMacro =              { fg = darcula.macro_name },    -- For constants that are defined by macros: `NULL` in C.
-        TSError =                   { fg = darcula.error },    -- For syntax/parser errors.
-        TSException =               { fg = darcula.keyword },    -- For exception related keywords.
-        TSField =                   { fg = darcula.constant }, -- For fields.
-        TSFloat =                   { fg = darcula.number },    -- For floats.
-        TSFuncMacro =               { fg = darcula.macro_name },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
-        TSInclude =                 { fg = darcula.pre_proc },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
-        TSLabel =                   { fg = darcula.keyword }, -- For labels: `label:` in C and `:label:` in Lua.
-        TSNamespace =               { fg = darcula.identifier },    -- For identifiers referring to modules and namespaces.
-        --TSNone =                    { },    -- TODO: docs
-        TSNumber =                  { fg = darcula.number },    -- For all numbers
-        -- TSOperator =                { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
-        -- TSParameter =               { fg = darcula.fg }, -- For parameters of a function.
-        -- TSParameterReference=       { fg = darcula.paleblue },    -- For references to parameters of a function.
-        TSProperty =                { fg = darcula.constant }, -- Same as `TSField`.
-        TSPunctDelimiter =          { fg = darcula.fg }, -- For delimiters ie: `.`
-        TSPunctBracket =            { fg = darcula.fg }, -- For brackets and parens.
-        TSPunctSpecial =            { fg = darcula.keyword }, -- For special punctutation that does not fall in the catagories before.
-        TSString =                  { fg = darcula.string },    -- For strings.
-        TSStringRegex =             { fg = darcula.number }, -- For regexes.
-        TSStringEscape =            { fg = darcula.keyword }, -- For escape characters within a string.
-        TSSymbol =                  { fg = darcula.yellow },    -- For identifiers referring to symbols or atoms.
-        TSType =                    { fg = darcula.identifier },    -- For types.
-        TSTypeBuiltin =             { fg = darcula.function_builtin },    -- For builtin types.
-        TSTag =                     { fg = darcula.tag },    -- Tags like html tag names.
-        TSTagDelimiter =            { fg = darcula.yellow },    -- Tag delimiter like `<` `>` `/`
-        TSText =                    { fg = darcula.text },    -- For strings considered text in a markup language.
-        TSTextReference =           { fg = darcula.yellow }, -- FIXME
-        TSEmphasis =                { fg = darcula.paleblue },    -- For text to be represented with emphasis.
-        TSUnderline =               { fg = darcula.fg, style = 'underline' },    -- For text to be represented with an underline.
-        -- TSStrike =                  { },    -- For strikethrough text.
-        -- TSTitle =                   { fg = darcula.fg, style = 'bold' },    -- Text that is part of a title.
-        -- TSLiteral =                 { fg = darcula.fg },    -- Literal text.
-        TSURI =                     { fg = darcula.link },    -- Any URI like a link or email.
-        TSConditional =             { fg = darcula.keyword },    -- For keywords related to conditionnals.
-        TSKeyword =                 { fg = darcula.keyword }, -- For keywords that don't fall in previous categories.
-        TSKeywordOperator =         { fg = darcula.keyword }, -- For keyword operators like `and` or `or`.
-        TSRepeat =                  { fg = darcula.keyword },    -- For keywords related to loops.
-        TSKeywordFunction =         { fg = darcula.keyword }, -- For keywords used to define a fuction.
-        TSFunction =                { fg = darcula.function_name },    -- For fuction (calls and definitions).
-        TSMethod =                  { fg = darcula.function_name },    -- For method calls and definitions.
-        TSFuncBuiltin =             { fg = darcula.function_builtin },    -- For builtin functions: `table.insert` in Lua.
-        TSVariable =                { fg = darcula.fg }, -- Any variable name that does not have another highlight.
-        TSVariableBuiltin =         { fg = darcula.keyword }, -- Variable names that are defined by the languages, like `this` or `self`.
-        TSComment=                  { fg = darcula.comment, style = 'italic' },
+        -- TSAnnotation =               { fg = darcula.pre_proc },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
+        -- TSAttribute =                { fg = darcula.pre_proc },    -- (unstable) TODO: docs
+        ["@boolean"] =                  { fg = darcula.keyword },    -- For booleans.
+        ["@character"] =                { fg = darcula.string },    -- For characters.
+        ["@constructor"] =              { fg = darcula.function_name }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
+        ["@constant"] =                 { fg = darcula.constant },    -- For constants
+        ["@constant.builtin"] =         { fg = darcula.keyword },    -- For constant that are built in the language: `nil` in Lua.
+        ["@constant.macro"] =           { fg = darcula.pre_proc },    -- For constants that are defined by macros: `NULL` in C.
+        -- TSError =                    { fg = darcula.error },    -- For syntax/parser errors.
+        -- TSException =                { fg = darcula.keyword },    -- For exception related keywords.
+        ["@field"] =                    { fg = darcula.constant }, -- For fields.
+        -- TSFloat =                    { fg = darcula.number },    -- For floats.
+        ["@include"] =                  { fg = darcula.pre_proc },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
+        ["@label"] =                    { fg = darcula.keyword }, -- For labels: `label:` in C and `:label:` in Lua.
+        ["@namespace"] =                { fg = darcula.identifier },    -- For identifiers referring to modules and namespaces.
+        -- TSNone =                     { },    -- TODO: docs
+        -- TSNumber =                   { fg = darcula.number },    -- For all numbers
+        -- TSOperator =                 { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
+        -- TSParameter =                { fg = darcula.fg }, -- For parameters of a function.
+        -- TSParameterReference=        { fg = darcula.paleblue },    -- For references to parameters of a function.
+        ["@property"] =                 { fg = darcula.constant }, -- Same as `TSField`.
+        ["@punctuation"] =              { fg = darcula.keyword }, -- For punctutation.
+        ["@punctuation.bracket"] =      { fg = darcula.fg }, -- For brackets and parens.
+        ["@punctuation.delimiter"] =    { fg = darcula.fg }, -- For delimiters ie: `.`
+        ["@punctuation.special"] =      { fg = darcula.keyword }, -- For special punctutation that does not fall in the catagories before.
+        ["@string"] =                   { fg = darcula.string },    -- For strings.
+        ["@string.regex"] =             { fg = darcula.number }, -- For regexes.
+        ["@string.escape"] =            { fg = darcula.keyword }, -- For escape characters within a string.
+        -- TSSymbol =                   { fg = darcula.yellow },    -- For identifiers referring to symbols or atoms.
+        ["@type"] =                     { fg = darcula.identifier },    -- For types.
+        -- TSTypeBuiltin =              { fg = darcula.function_builtin },    -- For builtin types.
+        -- ["@tag"] =                   { fg = darcula.tag },    -- Tags like html tag names.
+        -- TSTagDelimiter =             { fg = darcula.yellow },    -- Tag delimiter like `<` `>` `/`
+        ["@text"] =                     { fg = darcula.text },    -- For strings considered text in a markup language.
+        ["@text.reference"] =           { fg = darcula.yellow }, -- FIXME
+        -- TSEmphasis =                 { fg = darcula.paleblue },    -- For text to be represented with emphasis.
+        ["@text.underline"] =           { fg = darcula.fg, style = 'underline' },    -- For text to be represented with an underline.
+        -- TSStrike =                   { },    -- For strikethrough text.
+        -- TSTitle =                    { fg = darcula.fg, style = 'bold' },    -- Text that is part of a title.
+        -- TSLiteral =                  { fg = darcula.fg },    -- Literal text.
+        -- TSURI =                      { fg = darcula.link },    -- Any URI like a link or email.
+        ["@conditional"] =              { fg = darcula.keyword },    -- For keywords related to conditionnals.
+        ["@keyword"] =                  { fg = darcula.keyword }, -- For keywords that don't fall in previous categories.
+        ["@keyword.operator"] =         { fg = darcula.keyword }, -- For keyword operators like `and` or `or`.
+        ["@keyword.function"] =         { fg = darcula.keyword }, -- For keywords used to define a fuction.
+        ["@repeat"] =                   { fg = darcula.keyword },    -- For keywords related to loops.
+        ["@method"] =                   { fg = darcula.function_name },    -- For method calls and definitions.
+        ["@function"] =                 { fg = darcula.function_name },    -- For fuction (calls and definitions).
+        ["@function.builtin"] =         { fg = darcula.function_builtin },    -- For builtin functions: `table.insert` in Lua.
+        ["@function.macro"] =           { fg = darcula.macro_name },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
+        ["@variable"] =                 { fg = darcula.fg }, -- Any variable name that does not have another highlight.
+        ["@variable.builtin"] =         { fg = darcula.keyword }, -- Variable names that are defined by the languages, like `this` or `self`.
+        ["@comment"] =                  { fg = darcula.comment, style = 'italic' },
     }
 
     return treesitter
