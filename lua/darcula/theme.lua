@@ -212,16 +212,18 @@ theme.loadTreeSitter = function ()
         ["@string"] =                   { fg = darcula.string },    -- For strings.
         ["@string.regex"] =             { fg = darcula.number }, -- For regexes.
         ["@string.escape"] =            { fg = darcula.keyword }, -- For escape characters within a string.
+        ["@string.special"] =           { fg = darcula.special_comment },
         -- TSSymbol =                   { fg = darcula.yellow },    -- For identifiers referring to symbols or atoms.
         ["@type"] =                     { fg = darcula.identifier },    -- For types.
         -- TSTypeBuiltin =              { fg = darcula.function_builtin },    -- For builtin types.
         -- ["@tag"] =                   { fg = darcula.tag },    -- Tags like html tag names.
         -- TSTagDelimiter =             { fg = darcula.yellow },    -- Tag delimiter like `<` `>` `/`
         ["@text"] =                     { fg = darcula.text },    -- For strings considered text in a markup language.
-        ["@text.reference"] =           { fg = darcula.yellow }, -- FIXME
+        ["@text.reference"] =           { fg = darcula.number }, -- FIXME
         ["@text.underline"] =           { fg = darcula.fg, style = 'underline' },    -- For text to be represented with an underline.
         ["@text.title"] =               { fg = darcula.pre_proc, style = 'bold' },    -- Text that is part of a title.
         ["@text.url"] =                 { fg = darcula.link },    -- Any URI like a link or email.
+        ["@text.literal"] =             { fg = darcula.string },
         -- TSEmphasis =                 { fg = darcula.paleblue },    -- For text to be represented with emphasis.
         -- TSStrike =                   { },    -- For strikethrough text.
         -- TSLiteral =                  { fg = darcula.fg },    -- Literal text.
