@@ -310,6 +310,7 @@ theme.loadPlugins = function()
         CocSemEnumMember =                      { link = "EnumMember" },
         CocSemMacro =                           { link = "@function.macro" },
         CocSemType =                            { link = "@type" },
+        CocSemNamespace =                       { link = "@type" },
         CocSemDefaultLibrary =                  { link = "@function.builtin" },
         CocSemDefaultLibraryClass =             { link = "@type" },
         CocSemDefaultLibraryInterface =         { link = "@type" },
