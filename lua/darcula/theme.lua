@@ -401,6 +401,8 @@ theme.loadPlugins = function()
 
         -- Scrollbar
         ScrollbarHandle =                       { bg = darcula.scrollbar },
+        ScrollbarCursor =                       { fg = darcula.bg, style = "bold" },
+        ScrollbarCursorHandle =                 { fg = darcula.bg, bg = darcula.scrollbar },
         ScrollbarError =                        { fg = darcula.error, style = "bold" },
         ScrollbarErrorHandle =                  { fg = darcula.error, bg = darcula.scrollbar },
         ScrollbarHint =                         { fg = darcula.hint, style = "bold" },
@@ -413,6 +415,12 @@ theme.loadPlugins = function()
         ScrollbarSearchHandle =                 { fg = darcula.search, bg = darcula.scrollbar },
         ScrollbarMisc =                         { bg = darcula.scrollbar, style = "bold" },
         ScrollbarMiscHandle =                   { bg = darcula.scrollbar },
+        ScrollbarGitAdd =                       { fg = darcula.diff.add, bg = darcula.diff.add },
+        ScrollbarGitAddHandle =                 { fg = darcula.scrollbar, bg = darcula.scrollbar },
+        ScrollbarGitChange =                    { fg = darcula.diff.change, bg = darcula.diff.change },
+        ScrollbarGitChangeHandle =              { fg = darcula.scrollbar, bg = darcula.scrollbar },
+        ScrollbarGitDelete =                    { fg = darcula.git.delete },
+        ScrollbarGitDeleteHandle =              { fg = darcula.git.delete, bg = darcula.scrollbar },
 
         -- IndentBlankline
         IndentBlanklineChar =                   { fg = darcula.statusline.c_bg },
