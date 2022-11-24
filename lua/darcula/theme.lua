@@ -434,6 +434,11 @@ theme.loadPlugins = function()
         -- vim-trailing-whitespace
         ExtraWhitespace =                       { bg = darcula.diff.delete },
 
+        -- lualine
+        LualineGitAdd =                         { fg = darcula.git.add_fg },
+        LualineGitChange =                      { fg = darcula.git.change_fg },
+        LualineGitDelete =                      { fg = darcula.git.delete },
+
     }
 
     return plugins
