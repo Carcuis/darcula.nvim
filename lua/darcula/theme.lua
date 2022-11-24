@@ -92,7 +92,7 @@ theme.loadEditor = function ()
     local editor = {
         Normal =                { fg = darcula.fg, bg = darcula.bg },
         NormalFloat =           { fg = darcula.fg, bg = darcula.float_bg }, -- normal text and background color
-        ColorColumn =           { fg = darcula.none, bg = darcula.active }, --  used for the columns set with 'colorcolumn'
+        ColorColumn =           { fg = darcula.none, bg = darcula.sidebar }, --  used for the columns set with 'colorcolumn'
         Conceal =               { fg = darcula.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor =                { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- the character under the cursor
         CursorIM =              { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- like Cursor, but used when in IME mode
