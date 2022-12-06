@@ -74,6 +74,7 @@ theme.loadSyntax = function ()
 
         ["@include.python"] =   { link = "@keyword" },
         ["@type.cpp"] =         { link = "@keyword" },
+        ["@type.builtin.cpp"] = { link = "@keyword" },
         ["@punctuation.delimiter.cpp"] =    { link = "@keyword" },
         ["@variable.builtin.vim"] =         { link = "@function.builtin" },
         ["@constant.builtin.vim"] =         { link = "PreProc" },
@@ -215,7 +216,8 @@ theme.loadTreeSitter = function ()
         ["@string.special"] =           { fg = darcula.special_comment },
         -- TSSymbol =                   { fg = darcula.yellow },    -- For identifiers referring to symbols or atoms.
         ["@type"] =                     { fg = darcula.identifier },    -- For types.
-        -- TSTypeBuiltin =              { fg = darcula.function_builtin },    -- For builtin types.
+        ["@type.builtin"] =             { fg = darcula.function_builtin },    -- For builtin types.
+        ["@type.qualifier"] =           { fg = darcula.keyword },
         -- ["@tag"] =                   { fg = darcula.tag },    -- Tags like html tag names.
         -- TSTagDelimiter =             { fg = darcula.yellow },    -- Tag delimiter like `<` `>` `/`
         ["@text"] =                     { fg = darcula.text },    -- For strings considered text in a markup language.
