@@ -441,6 +441,9 @@ theme.loadPlugins = function()
         LualineGitChange =                      { fg = darcula.git.change_fg },
         LualineGitDelete =                      { fg = darcula.git.delete },
 
+        -- virt-column
+        VirtColumn =                            { fg = darcula.virt_column },
+
     }
 
     return plugins

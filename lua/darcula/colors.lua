@@ -45,6 +45,7 @@ local darcula = {
     sidebar =           '#3c3f41',
     gutter =            '#313335',
     float_bg =          '#313335',
+    virt_column =       '#3c3f41',
 
     error =             '#bc3f3c',
     warning =           '#be9117',
