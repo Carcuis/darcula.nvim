@@ -30,7 +30,7 @@ local darcula = {
     inactive = {
         a = { fg = colors.disabled, bg = colors.bg_alt_1, gui = 'bold' },
         b = { fg = colors.number, bg = colors.statusline.b_bg },
-        c = { fg = colors.disabled, bg = colors.bg_alt_2 }
+        c = { fg = colors.disabled, bg = colors.sidebar }
     },
 }
 

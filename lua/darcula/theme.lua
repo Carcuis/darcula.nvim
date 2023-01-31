@@ -437,9 +437,9 @@ theme.loadPlugins = function()
         ExtraWhitespace =                       { bg = darcula.diff.delete },
 
         -- lualine
-        LualineGitAdd =                         { fg = darcula.git.add_fg },
-        LualineGitChange =                      { fg = darcula.git.change_fg },
-        LualineGitDelete =                      { fg = darcula.git.delete },
+        LualineGitAdd =                         { fg = darcula.git.add_fg, bg = darcula.statusline.c_bg },
+        LualineGitChange =                      { fg = darcula.git.change_fg, bg = darcula.statusline.c_bg },
+        LualineGitDelete =                      { fg = darcula.git.delete, bg = darcula.statusline.c_bg },
 
         -- virt-column
         VirtColumn =                            { fg = darcula.virt_column },
