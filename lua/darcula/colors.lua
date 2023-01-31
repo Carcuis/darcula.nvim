@@ -71,7 +71,7 @@ local darcula = {
     statusline = {
         a_bg =          '#4e5254',
         b_bg =          '#2f2f2f',
-        c_bg =          '#3c3f41',
+        c_bg =          '#313335',
     },
 
     lsp_highlight = {
