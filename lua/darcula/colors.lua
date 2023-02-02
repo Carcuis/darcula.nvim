@@ -39,6 +39,7 @@ local darcula = {
     cursor =            '#ffffff',
     cursorline =        '#323232',
     accent =            '#a9b7c6',
+    spell_undercurl =   '#5c8b61',
 
     tag =               '#e8bf6a',
     scrollbar =         '#565656',
