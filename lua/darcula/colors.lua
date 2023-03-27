@@ -64,6 +64,9 @@ local darcula = {
     function_name =     '#ffc66d',
     function_builtin =  '#8888c6',
     identifier =        '#b5b6e3',
+    decorator =         '#bbb529',
+    python_parameter =  '#aa4926',
+    python_self =       '#94558d',
 
     match_brace = {
         fg =    '#ffef28',

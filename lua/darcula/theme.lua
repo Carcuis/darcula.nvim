@@ -72,13 +72,15 @@ theme.loadSyntax = function ()
         jsonEscape =            { fg = darcula.keyword },
         jsonStringMatch =       { fg = darcula.string },
 
-        ["@include.python"] =   { link = "@keyword" },
-        ["@type.cpp"] =         { link = "@keyword" },
-        ["@type.builtin.cpp"] = { link = "@keyword" },
+        ["@include.python"] =               { link = "@keyword" },
+        ["@variable.builtin.python"] =      { fg = darcula.python_self },
+        ["@parameter.python"] =             { fg = darcula.python_parameter },
+        ["@type.cpp"] =                     { link = "@keyword" },
+        ["@type.builtin.cpp"] =             { link = "@keyword" },
         ["@punctuation.delimiter.cpp"] =    { link = "@keyword" },
         ["@variable.builtin.vim"] =         { link = "@function.builtin" },
         ["@constant.builtin.vim"] =         { link = "PreProc" },
-        ["@variable.bash"] =    { fg = darcula.text },
+        ["@variable.bash"] =                { fg = darcula.text },
 
     }
 
@@ -186,7 +188,7 @@ theme.loadTreeSitter = function ()
 
     local treesitter = {
         -- TSAnnotation =               { fg = darcula.pre_proc },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
-        -- TSAttribute =                { fg = darcula.pre_proc },    -- (unstable) TODO: docs
+        ["@attribute"] =                { fg = darcula.decorator },
         ["@boolean"] =                  { fg = darcula.keyword },    -- For booleans.
         ["@character"] =                { fg = darcula.string },    -- For characters.
         ["@constructor"] =              { fg = darcula.function_name }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
@@ -203,7 +205,7 @@ theme.loadTreeSitter = function ()
         -- TSNone =                     { },    -- TODO: docs
         -- TSNumber =                   { fg = darcula.number },    -- For all numbers
         -- TSOperator =                 { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
-        -- TSParameter =                { fg = darcula.fg }, -- For parameters of a function.
+        -- ["@parameter"] =             { fg = darcula.fg }, -- For parameters of a function.
         -- TSParameterReference=        { fg = darcula.paleblue },    -- For references to parameters of a function.
         ["@property"] =                 { fg = darcula.constant }, -- Same as `TSField`.
         ["@punctuation"] =              { fg = darcula.keyword }, -- For punctutation.
