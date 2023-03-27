@@ -213,6 +213,7 @@ theme.loadTreeSitter = function ()
         ["@punctuation.delimiter"] =    { fg = darcula.fg }, -- For delimiters ie: `.`
         ["@punctuation.special"] =      { fg = darcula.keyword }, -- For special punctutation that does not fall in the catagories before.
         ["@string"] =                   { fg = darcula.string },    -- For strings.
+        ["@string.documentation"] =     { fg = darcula.special_comment, italic = true },    -- For documentation.
         ["@string.regex"] =             { fg = darcula.number }, -- For regexes.
         ["@string.escape"] =            { fg = darcula.keyword }, -- For escape characters within a string.
         ["@string.special"] =           { fg = darcula.special_comment },
@@ -242,7 +243,8 @@ theme.loadTreeSitter = function ()
         ["@function.macro"] =           { fg = darcula.macro_name },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         ["@variable"] =                 { fg = darcula.fg }, -- Any variable name that does not have another highlight.
         ["@variable.builtin"] =         { fg = darcula.keyword }, -- Variable names that are defined by the languages, like `this` or `self`.
-        ["@comment"] =                  { fg = darcula.comment, style = 'italic' },
+        ["@comment"] =                  { fg = darcula.comment, italic = true },
+        ["@comment.documentation"] =    { fg = darcula.special_comment, italic = true },
     }
 
     return treesitter
