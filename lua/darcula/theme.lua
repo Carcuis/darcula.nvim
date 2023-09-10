@@ -248,29 +248,8 @@ theme.loadLSP = function ()
     -- Lsp highlight groups
 
     local lsp = {
-        -- LspDiagnosticsDefaultError =            { fg = darcula.error }, -- used for "Error" diagnostic virtual text
-        -- LspDiagnosticsSignError =               { fg = darcula.error }, -- used for "Error" diagnostic signs in sign column
-        -- LspDiagnosticsFloatingError =           { fg = darcula.error }, -- used for "Error" diagnostic messages in the diagnostics float
-        -- LspDiagnosticsVirtualTextError =        { fg = darcula.error }, -- Virtual text "Error"
-        -- LspDiagnosticsUnderlineError =          { style = 'undercurl', sp = darcula.error }, -- used to underline "Error" diagnostics.
-        -- LspDiagnosticsDefaultWarning =          { fg = darcula.yellow}, -- used for "Warning" diagnostic signs in sign column
-        -- LspDiagnosticsSignWarning =             { fg = darcula.yellow}, -- used for "Warning" diagnostic signs in sign column
-        -- LspDiagnosticsFloatingWarning =         { fg = darcula.yellow}, -- used for "Warning" diagnostic messages in the diagnostics float
-        -- LspDiagnosticsVirtualTextWarning =      { fg = darcula.yellow}, -- Virtual text "Warning"
-        -- LspDiagnosticsUnderlineWarning =        { style = 'undercurl', sp = darcula.yellow }, -- used to underline "Warning" diagnostics.
-        -- LspDiagnosticsDefaultInformation =      { fg = darcula.paleblue }, -- used for "Information" diagnostic virtual text
-        -- LspDiagnosticsSignInformation =         { fg = darcula.paleblue }, -- used for "Information" diagnostic signs in sign column
-        -- LspDiagnosticsFloatingInformation =     { fg = darcula.paleblue }, -- used for "Information" diagnostic messages in the diagnostics float
-        -- LspDiagnosticsVirtualTextInformation =  { fg = darcula.paleblue }, -- Virtual text "Information"
-        -- LspDiagnosticsUnderlineInformation =    { style = 'undercurl', sp = darcula.paleblue }, -- used to underline "Information" diagnostics.
-        -- LspDiagnosticsDefaultHint =             { fg = darcula.purple  }, -- used for "Hint" diagnostic virtual text
-        -- LspDiagnosticsSignHint =                { fg = darcula.purple  }, -- used for "Hint" diagnostic signs in sign column
-        -- LspDiagnosticsFloatingHint =            { fg = darcula.purple  }, -- used for "Hint" diagnostic messages in the diagnostics float
-        -- LspDiagnosticsVirtualTextHint =         { fg = darcula.purple  }, -- Virtual text "Hint"
-        -- LspDiagnosticsUnderlineHint =           { style = 'undercurl', sp = darcula.paleblue }, -- used to underline "Hint" diagnostics.
-        -- LspReferenceText =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "text" references
-        -- LspReferenceRead =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "read" references
-        -- LspReferenceWrite =                     { bg = darcula.lsp_highlight.hl_bg_write }, -- used for highlighting "write" references
+        -- TODO, use coc.nvim instead
+
     }
 
     return lsp
@@ -321,23 +300,11 @@ theme.loadPlugins = function()
         CocSemDefaultLibraryEnum =              { link = "@type" },
         CocSemDefaultLibraryType =              { link = "@type" },
         CocSemDefaultLibraryNamespace =         { link = "@type" },
-        -- CocSemDeclaration =                     { link = "TSTypeDeclaration" },
         CocSemDeclarationClass =                { link = "@type" },
         CocSemDeclarationInterface =            { link = "@type" },
         CocSemDeclarationEnum =                 { link = "@type" },
         CocSemDeclarationType =                 { link = "@type" },
         CocSemDeclarationNamespace =            { link = "@type" },
-
-        -- Dashboard
-        DashboardShortCut =                     { fg = darcula.blue },
-        DashboardHeader =                       { fg = darcula.red },
-        DashboardCenter =                       { fg = darcula.cyan },
-        DashboardFooter =                       { fg = darcula.green, style = "italic" },
-
-        -- LspTrouble
-        LspTroubleText =                        { fg = darcula.text },
-        LspTroubleCount =                       { fg = darcula.purple, bg = darcula.active },
-        LspTroubleNormal =                      { fg = darcula.fg, bg = darcula.sidebar },
 
         -- Diff
         diffAdded =                             { fg = darcula.green },
@@ -348,15 +315,6 @@ theme.loadPlugins = function()
         diffFile =                              { style = "bold" },
         diffLine =                              { fg = darcula.comment },
         diffIndexLine =                         { fg = darcula.comment },
-
-        -- Neogit
-        NeogitBranch =                          { fg = darcula.paleblue },
-        NeogitRemote =                          { fg = darcula.purple },
-        NeogitHunkHeader =                      { fg = darcula.fg, bg = darcula.highlight },
-        NeogitHunkHeaderHighlight =             { fg = darcula.blue, bg = darcula.menu },
-        NeogitDiffContextHighlight =            { fg = darcula.text, bg = darcula.menu },
-        NeogitDiffDeleteHighlight =             { fg = darcula.red },
-        NeogitDiffAddHighlight =                { fg = darcula.green },
 
         -- GitGutter
         GitGutterAdd =                          { fg = darcula.git.add, bg = darcula.gutter }, -- diff mode: Added line |diff.txt|
