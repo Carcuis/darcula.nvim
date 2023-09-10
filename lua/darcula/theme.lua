@@ -187,27 +187,24 @@ theme.loadTreeSitter = function ()
     -- TreeSitter highlight groups
 
     local treesitter = {
-        -- TSAnnotation =               { fg = darcula.pre_proc },    -- For C++/Dart attributes, annotations that can be attached to the code to denote some kind of meta information.
         ["@attribute"] =                { fg = darcula.decorator },
         ["@boolean"] =                  { fg = darcula.keyword },    -- For booleans.
         ["@character"] =                { fg = darcula.string },    -- For characters.
+        ["@character.special"] =        { fg = darcula.keyword },    -- For special characters.
         ["@constructor"] =              { fg = darcula.function_name }, -- For constructor calls and definitions: `= { }` in Lua, and Java constructors.
         ["@constant"] =                 { fg = darcula.constant },    -- For constants
         ["@constant.builtin"] =         { fg = darcula.keyword },    -- For constant that are built in the language: `nil` in Lua.
         ["@constant.macro"] =           { fg = darcula.pre_proc },    -- For constants that are defined by macros: `NULL` in C.
-        -- TSError =                    { fg = darcula.error },    -- For syntax/parser errors.
-        -- TSException =                { fg = darcula.keyword },    -- For exception related keywords.
+        ["@exception"] =                { fg = darcula.keyword },    -- For exception related keywords.
         ["@field"] =                    { fg = darcula.constant }, -- For fields.
-        -- TSFloat =                    { fg = darcula.number },    -- For floats.
+        ["@float"] =                    { fg = darcula.number },    -- For floats.
         ["@include"] =                  { fg = darcula.pre_proc },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         ["@label"] =                    { fg = darcula.keyword }, -- For labels: `label:` in C and `:label:` in Lua.
         ["@namespace"] =                { fg = darcula.identifier },    -- For identifiers referring to modules and namespaces.
-        -- TSNone =                     { },    -- TODO: docs
-        -- TSNumber =                   { fg = darcula.number },    -- For all numbers
-        -- TSOperator =                 { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
-        -- ["@parameter"] =             { fg = darcula.fg }, -- For parameters of a function.
-        -- TSParameterReference=        { fg = darcula.paleblue },    -- For references to parameters of a function.
-        ["@property"] =                 { fg = darcula.constant }, -- Same as `TSField`.
+        ["@number"] =                   { fg = darcula.number },    -- For all numbers
+        ["@operator"] =                 { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
+        ["@parameter"] =                { fg = darcula.identifier }, -- For parameters of a function.
+        ["@property"] =                 { fg = darcula.constant }, -- Same as `@field`.
         ["@punctuation"] =              { fg = darcula.keyword }, -- For punctutation.
         ["@punctuation.bracket"] =      { fg = darcula.fg }, -- For brackets and parens.
         ["@punctuation.delimiter"] =    { fg = darcula.fg }, -- For delimiters ie: `.`
@@ -217,21 +214,17 @@ theme.loadTreeSitter = function ()
         ["@string.regex"] =             { fg = darcula.number }, -- For regexes.
         ["@string.escape"] =            { fg = darcula.keyword }, -- For escape characters within a string.
         ["@string.special"] =           { fg = darcula.special_comment },
-        -- TSSymbol =                   { fg = darcula.yellow },    -- For identifiers referring to symbols or atoms.
         ["@type"] =                     { fg = darcula.identifier },    -- For types.
         ["@type.builtin"] =             { fg = darcula.function_builtin },    -- For builtin types.
         ["@type.qualifier"] =           { fg = darcula.keyword },
-        -- ["@tag"] =                   { fg = darcula.tag },    -- Tags like html tag names.
-        -- TSTagDelimiter =             { fg = darcula.yellow },    -- Tag delimiter like `<` `>` `/`
+        ["@tag"] =                      { fg = darcula.tag },    -- Tags like html tag names.
         ["@text"] =                     { fg = darcula.text },    -- For strings considered text in a markup language.
         ["@text.reference"] =           { fg = darcula.number }, -- FIXME
         ["@text.underline"] =           { fg = darcula.fg, style = 'underline' },    -- For text to be represented with an underline.
         ["@text.title"] =               { fg = darcula.pre_proc, style = 'bold' },    -- Text that is part of a title.
         ["@text.url"] =                 { fg = darcula.link },    -- Any URI like a link or email.
         ["@text.literal"] =             { fg = darcula.string },
-        -- TSEmphasis =                 { fg = darcula.paleblue },    -- For text to be represented with emphasis.
-        -- TSStrike =                   { },    -- For strikethrough text.
-        -- TSLiteral =                  { fg = darcula.fg },    -- Literal text.
+        ["@text.todo"] =                { fg = darcula.todo, style = 'bold,italic,reverse' }, -- For the keywords TODO FIXME and XXX.
         ["@conditional"] =              { fg = darcula.keyword },    -- For keywords related to conditionnals.
         ["@keyword"] =                  { fg = darcula.keyword }, -- For keywords that don't fall in previous categories.
         ["@keyword.operator"] =         { fg = darcula.keyword }, -- For keyword operators like `and` or `or`.
