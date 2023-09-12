@@ -16,25 +16,6 @@ util.highlight = function (group, color)
     vim.api.nvim_set_hl(0, group, color)
 end
 
--- Only define darcula if it's the active colorshceme
-function util.onColorScheme()
-    if vim.g.colors_name ~= "darcula" then
-        vim.cmd [[autocmd! darcula]]
-        vim.cmd [[augroup! darcula]]
-    end
-end
-
--- Change the background for the terminal, packer and qf windows
-util.contrast = function ()
-    vim.cmd [[augroup darcula]]
-    vim.cmd [[  autocmd!]]
-    vim.cmd [[  autocmd ColorScheme * lua require("darcula.util").onColorScheme()]]
-    vim.cmd [[  autocmd TermOpen * setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]]
-    vim.cmd [[  autocmd FileType packer setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]]
-    vim.cmd [[  autocmd FileType qf setlocal winhighlight=Normal:NormalFloat,SignColumn:NormalFloat]]
-    vim.cmd [[augroup end]]
-end
-
 -- Load the theme
 function util.load()
     -- Set the theme environment
@@ -69,10 +50,6 @@ function util.load()
             util.highlight(group, colors)
         end
 
-        -- if contrast is enabled, apply it to sidebars and floating windows
-        if vim.g.darcula_contrast == true then
-            util.contrast()
-        end
         async:close()
 
     end))
