@@ -203,7 +203,7 @@ theme.loadTreeSitter = function ()
         ["@namespace"] =                { fg = darcula.identifier },    -- For identifiers referring to modules and namespaces.
         ["@number"] =                   { fg = darcula.number },    -- For all numbers
         ["@operator"] =                 { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
-        ["@parameter"] =                { fg = darcula.identifier }, -- For parameters of a function.
+        ["@parameter"] =                { fg = darcula.fg }, -- For parameters of a function.
         ["@property"] =                 { fg = darcula.constant }, -- Same as `@field`.
         ["@punctuation"] =              { fg = darcula.keyword }, -- For punctutation.
         ["@punctuation.bracket"] =      { fg = darcula.fg }, -- For brackets and parens.
