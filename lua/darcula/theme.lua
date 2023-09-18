@@ -403,6 +403,12 @@ theme.loadPlugins = function()
         -- virt-column
         VirtColumn =                            { fg = darcula.virt_column },
 
+        -- DropBar
+        DropBarCurrentContext =                 { bg = darcula.cursorline },
+        DropBarHover =                          { bg = darcula.cursorline },
+        DropBarMenuHoverEntry =                 { bg = darcula.active },
+        DropBarPreview =                        { bg = darcula.cursorline },
+
     }
 
     return plugins
