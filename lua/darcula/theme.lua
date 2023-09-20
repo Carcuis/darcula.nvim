@@ -400,9 +400,6 @@ theme.loadPlugins = function()
         LualineGitChange =                      { fg = darcula.git.change_fg, bg = darcula.statusline.c_bg },
         LualineGitDelete =                      { fg = darcula.git.delete, bg = darcula.statusline.c_bg },
 
-        -- virt-column
-        VirtColumn =                            { fg = darcula.virt_column },
-
         -- DropBar
         DropBarCurrentContext =                 { bg = darcula.cursorline },
         DropBarHover =                          { bg = darcula.cursorline },
