@@ -431,7 +431,7 @@ theme.postLoad = function ()
         NvimTreeFolderName=                     { fg = darcula.fg, style = "bold" },
         NvimTreeOpenedFolderName=               { fg = darcula.fg, style = "bold,italic" },
         NvimTreeEmptyFolderName=                { fg = darcula.fg },
-        NvimTreeFolderIcon=                     { fg = darcula.accent },
+        NvimTreeFolderIcon=                     { fg = darcula.comment },
         -- NvimTreeIndentMarker =                  { fg = darcula.disabled },
         NvimTreeLspDiagnosticsError =           { fg = darcula.error },
         NvimTreeLspDiagnosticsWarning =         { fg = darcula.warning },
