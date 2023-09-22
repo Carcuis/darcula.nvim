@@ -401,9 +401,9 @@ theme.loadPlugins = function()
         LualineGitDelete =                      { fg = darcula.git.delete, bg = darcula.statusline.c_bg },
 
         -- DropBar
-        DropBarCurrentContext =                 { bg = darcula.cursorline },
+        DropBarCurrentContext =                 { bg = darcula.active },
         DropBarHover =                          { bg = darcula.cursorline },
-        DropBarMenuHoverEntry =                 { bg = darcula.active },
+        DropBarMenuHoverEntry =                 { bg = darcula.menu },
         DropBarPreview =                        { bg = darcula.cursorline },
 
     }
