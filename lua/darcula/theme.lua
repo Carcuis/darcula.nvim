@@ -383,9 +383,6 @@ theme.loadPlugins = function()
         ScrollbarGitDelete =                    { fg = darcula.git.delete },
         ScrollbarGitDeleteHandle =              { fg = darcula.git.delete, bg = darcula.scrollbar },
 
-        -- IndentBlankline
-        IndentBlanklineChar =                   { fg = darcula.statusline.c_bg },
-
         -- Nvim Hlslens
         HlSearchNear =                          { fg = darcula.text, bg = darcula.incsearch, style = "bold" },
         HlSearchLens =                          { fg = darcula.text, bg = darcula.search, style = "reverse" },
@@ -438,6 +435,10 @@ theme.postLoad = function ()
         NvimTreeLspDiagnosticsInformation =     { fg = darcula.info },
         NvimTreeLspDiagnosticsHint =            { fg = darcula.hint },
 
+        -- IndentBlankline
+        IblIndent =                             { fg = darcula.statusline.c_bg },
+        IblWhitespace =                         {  },
+        IblScope =                              { fg = darcula.line_numbers },
     }
 
     return groups
