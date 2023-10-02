@@ -437,7 +437,7 @@ theme.postLoad = function ()
 
         -- IndentBlankline
         IblIndent =                             { fg = darcula.statusline.c_bg },
-        IblWhitespace =                         {  },
+        IblWhitespace =                         { fg = darcula.fg },
         IblScope =                              { fg = darcula.line_numbers },
     }
 
