@@ -406,6 +406,9 @@ theme.loadPlugins = function()
         DropBarMenuHoverEntry =                 { bg = darcula.menu },
         DropBarPreview =                        { bg = darcula.cursorline },
 
+        -- Nvim Surround
+        NvimSurroundHighlight =                 { link = "PmenuSel" },
+
     }
 
     return plugins
