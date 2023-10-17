@@ -81,6 +81,9 @@ theme.loadSyntax = function ()
         ["@variable.builtin.vim"] =         { link = "@function.builtin" },
         ["@constant.builtin.vim"] =         { link = "PreProc" },
         ["@variable.bash"] =                { fg = darcula.text },
+        ["@text.literal.markdown_inline"] =     { bg = darcula.sidebar },
+        ["@text.strong.markdown_inline"] =      { bold = true },
+        ["@text.emphasis.markdown_inline"] =    { italic = true },
 
     }
 
