@@ -72,6 +72,9 @@ theme.loadSyntax = function ()
         jsonEscape =            { fg = darcula.keyword },
         jsonStringMatch =       { fg = darcula.string },
 
+        ps1Function =           { link = "@function" },
+        ps1Variable =           { fg = darcula.text },
+
         ["@include.python"] =               { link = "@keyword" },
         ["@variable.builtin.python"] =      { fg = darcula.python_self },
         ["@parameter.python"] =             { fg = darcula.python_parameter },
