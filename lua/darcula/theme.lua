@@ -87,6 +87,11 @@ theme.loadSyntax = function ()
         ["@text.literal.markdown_inline"] =     { bg = darcula.sidebar },
         ["@text.strong.markdown_inline"] =      { bold = true },
         ["@text.emphasis.markdown_inline"] =    { italic = true },
+        ["@label.json"] =                   { fg = darcula.constant },
+        ["@punctuation.delimiter.json"] =   { fg = darcula.keyword },
+        ["@label.jsonc"] =                  { fg = darcula.constant },
+        ["@punctuation.delimiter.jsonc"] =  { fg = darcula.keyword },
+        ["@keyword.json5"] =                { fg = darcula.constant },
 
     }
 
