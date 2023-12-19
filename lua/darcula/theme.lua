@@ -166,6 +166,7 @@ theme.loadEditor = function ()
         healthSuccess =         { fg = darcula.green },
         healthWarning =         { fg = darcula.yellow },
         VertSplit =             { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
+        WinSeparator =          { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
         FloatBorder =           { fg = darcula.hint, style = 'bold' },
 
     }
