@@ -75,18 +75,28 @@ theme.loadSyntax = function ()
         ps1Function =           { link = "@function" },
         ps1Variable =           { fg = darcula.text },
 
-        ["@include.python"] =               { link = "@keyword" },
+        ["@keyword.import.python"] =        { link = "@keyword" },
         ["@variable.builtin.python"] =      { fg = darcula.python_self },
-        ["@parameter.python"] =             { fg = darcula.python_parameter },
-        ["@type.cpp"] =                     { link = "@keyword" },
+        ["@variable.parameter.python"] =    { fg = darcula.python_parameter },
         ["@type.builtin.cpp"] =             { link = "@keyword" },
         ["@punctuation.delimiter.cpp"] =    { link = "@keyword" },
         ["@variable.builtin.vim"] =         { link = "@function.builtin" },
         ["@constant.builtin.vim"] =         { link = "PreProc" },
         ["@variable.bash"] =                { fg = darcula.text },
-        ["@text.literal.markdown_inline"] =     { bg = darcula.sidebar },
-        ["@text.strong.markdown_inline"] =      { bold = true },
-        ["@text.emphasis.markdown_inline"] =    { italic = true },
+        ["@markup.link.markdown_inline"] =          { fg = darcula.string },
+        ["@markup.raw.markdown_inline"] =           { bg = darcula.sidebar },
+        ["@markup.heading.1.markdown"] =            { fg = darcula.constant, style = 'bold' },
+        ["@markup.heading.2.markdown"] =            { fg = darcula.constant, style = 'bold' },
+        ["@markup.heading.3.markdown"] =            { fg = darcula.constant, style = 'bold' },
+        ["@markup.heading.4.markdown"] =            { fg = darcula.constant, style = 'bold' },
+        ["@markup.heading.5.markdown"] =            { fg = darcula.constant, style = 'bold' },
+        ["@markup.heading.6.markdown"] =            { fg = darcula.constant, style = 'bold' },
+        ["@markup.heading.1.marker.markdown"] =     { fg = darcula.keyword, style = 'bold' },
+        ["@markup.heading.2.marker.markdown"] =     { fg = darcula.keyword, style = 'bold' },
+        ["@markup.heading.3.marker.markdown"] =     { fg = darcula.keyword, style = 'bold' },
+        ["@markup.heading.4.marker.markdown"] =     { fg = darcula.keyword, style = 'bold' },
+        ["@markup.heading.5.marker.markdown"] =     { fg = darcula.keyword, style = 'bold' },
+        ["@markup.heading.6.marker.markdown"] =     { fg = darcula.keyword, style = 'bold' },
         ["@label.json"] =                   { fg = darcula.constant },
         ["@punctuation.delimiter.json"] =   { fg = darcula.keyword },
         ["@label.jsonc"] =                  { fg = darcula.constant },
@@ -207,49 +217,57 @@ theme.loadTreeSitter = function ()
         ["@constant"] =                 { fg = darcula.constant },    -- For constants
         ["@constant.builtin"] =         { fg = darcula.keyword },    -- For constant that are built in the language: `nil` in Lua.
         ["@constant.macro"] =           { fg = darcula.pre_proc },    -- For constants that are defined by macros: `NULL` in C.
-        ["@exception"] =                { fg = darcula.keyword },    -- For exception related keywords.
-        ["@field"] =                    { fg = darcula.constant }, -- For fields.
-        ["@float"] =                    { fg = darcula.number },    -- For floats.
-        ["@include"] =                  { fg = darcula.pre_proc },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         ["@label"] =                    { fg = darcula.keyword }, -- For labels: `label:` in C and `:label:` in Lua.
-        ["@namespace"] =                { fg = darcula.identifier },    -- For identifiers referring to modules and namespaces.
+        ["@module"] =                   { fg = darcula.identifier },    -- For identifiers referring to modules and namespaces.
         ["@number"] =                   { fg = darcula.number },    -- For all numbers
+        ["@number.float"] =             { fg = darcula.number },    -- For floats.
         ["@operator"] =                 { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
-        ["@parameter"] =                { fg = darcula.fg }, -- For parameters of a function.
-        ["@property"] =                 { fg = darcula.constant }, -- Same as `@field`.
+        ["@property"] =                 { fg = darcula.constant }, -- Same as `@variable.member`.
         ["@punctuation"] =              { fg = darcula.keyword }, -- For punctutation.
         ["@punctuation.bracket"] =      { fg = darcula.fg }, -- For brackets and parens.
         ["@punctuation.delimiter"] =    { fg = darcula.fg }, -- For delimiters ie: `.`
         ["@punctuation.special"] =      { fg = darcula.keyword }, -- For special punctutation that does not fall in the catagories before.
         ["@string"] =                   { fg = darcula.string },    -- For strings.
         ["@string.documentation"] =     { fg = darcula.special_comment, italic = true },    -- For documentation.
-        ["@string.regex"] =             { fg = darcula.number }, -- For regexes.
+        ["@string.regexp"] =            { fg = darcula.number }, -- For regexes.
         ["@string.escape"] =            { fg = darcula.keyword }, -- For escape characters within a string.
         ["@string.special"] =           { fg = darcula.special_comment },
+        ["@string.special.symbol"] =    { fg = darcula.keyword },
         ["@type"] =                     { fg = darcula.identifier },    -- For types.
         ["@type.builtin"] =             { fg = darcula.function_builtin },    -- For builtin types.
         ["@type.qualifier"] =           { fg = darcula.keyword },
         ["@tag"] =                      { fg = darcula.tag },    -- Tags like html tag names.
-        ["@text"] =                     { fg = darcula.text },    -- For strings considered text in a markup language.
-        ["@text.reference"] =           { fg = darcula.number }, -- FIXME
-        ["@text.underline"] =           { fg = darcula.fg, style = 'underline' },    -- For text to be represented with an underline.
-        ["@text.title"] =               { fg = darcula.pre_proc, style = 'bold' },    -- Text that is part of a title.
-        ["@text.url"] =                 { fg = darcula.link },    -- Any URI like a link or email.
-        ["@text.literal"] =             { fg = darcula.string },
-        ["@text.todo"] =                { fg = darcula.todo, style = 'bold,italic,reverse' }, -- For the keywords TODO FIXME and XXX.
-        ["@conditional"] =              { fg = darcula.keyword },    -- For keywords related to conditionnals.
+        ["@markup"] =                   { fg = darcula.text },    -- For strings considered text in a markup language.
+        ["@markup.heading"] =           { fg = darcula.pre_proc, style = 'bold' },    -- Text that is part of a title.
+        ["@markup.link"] =              { fg = darcula.number },
+        ["@markup.link.label"] =        { fg = darcula.link },
+        ["@markup.link.url"] =          { fg = darcula.link },    -- Any URI like a link or email.
+        ["@markup.list"] =              { fg = darcula.keyword },
+        ["@markup.raw"] =               { fg = darcula.string },
+        ["@markup.raw.delimiter"] =     { fg = darcula.keyword },
+        ["@markup.strong"] =            { bold = true },
+        ["@markup.italic"] =            { italic = true },
+        ["@markup.strikethrough"] =     { strikethrough = true },
+        ["@markup.underline"] =         { fg = darcula.fg, style = 'underline' },
         ["@keyword"] =                  { fg = darcula.keyword }, -- For keywords that don't fall in previous categories.
+        ["@keyword.conditional"] =      { fg = darcula.keyword },    -- For keywords related to conditionnals.
+        ["@keyword.exception"] =        { fg = darcula.keyword },    -- For exception related keywords.
         ["@keyword.operator"] =         { fg = darcula.keyword }, -- For keyword operators like `and` or `or`.
         ["@keyword.function"] =         { fg = darcula.keyword }, -- For keywords used to define a fuction.
-        ["@repeat"] =                   { fg = darcula.keyword },    -- For keywords related to loops.
-        ["@method"] =                   { fg = darcula.function_name },    -- For method calls and definitions.
+        ["@keyword.repeat"] =           { fg = darcula.keyword },    -- For keywords related to loops.
+        ["@keyword.import"] =           { fg = darcula.pre_proc },    -- For includes: `#include` in C, `use` or `extern crate` in Rust, or `require` in Lua.
         ["@function"] =                 { fg = darcula.function_name },    -- For fuction (calls and definitions).
+        ["@function.method"] =          { fg = darcula.function_name },    -- For method definitions.
+        ["@function.method.call"] =     { fg = darcula.function_name },    -- For method calls.
         ["@function.builtin"] =         { fg = darcula.function_builtin },    -- For builtin functions: `table.insert` in Lua.
         ["@function.macro"] =           { fg = darcula.macro_name },    -- For macro defined fuctions (calls and definitions): each `macro_rules` in Rust.
         ["@variable"] =                 { fg = darcula.fg }, -- Any variable name that does not have another highlight.
         ["@variable.builtin"] =         { fg = darcula.keyword }, -- Variable names that are defined by the languages, like `this` or `self`.
+        ["@variable.member"] =          { fg = darcula.constant }, -- For fields.
+        ["@variable.parameter"] =       { fg = darcula.fg }, -- For parameters of a function.
         ["@comment"] =                  { fg = darcula.comment, italic = true },
         ["@comment.documentation"] =    { fg = darcula.special_comment, italic = true },
+        ["@comment.todo"] =             { fg = darcula.todo, style = 'bold,italic,reverse' }, -- For the keywords TODO FIXME and XXX.
     }
 
     return treesitter
