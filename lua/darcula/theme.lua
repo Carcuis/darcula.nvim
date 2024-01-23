@@ -464,6 +464,7 @@ theme.postLoad = function ()
         NvimTreeLspDiagnosticsWarning =         { fg = darcula.warning },
         NvimTreeLspDiagnosticsInformation =     { fg = darcula.info },
         NvimTreeLspDiagnosticsHint =            { fg = darcula.hint },
+        NvimTreeModifiedIcon =                  { fg = darcula.string },
 
         -- IndentBlankline
         IblIndent =                             { fg = darcula.statusline.c_bg },
