@@ -253,6 +253,8 @@ theme.loadTreeSitter = function ()
         ["@markup.underline"] =         { fg = darcula.fg, style = 'underline' },
         ["@keyword"] =                  { fg = darcula.keyword }, -- For keywords that don't fall in previous categories.
         ["@keyword.conditional"] =      { fg = darcula.keyword },    -- For keywords related to conditionnals.
+        ["@keyword.directive"] =        { fg = darcula.pre_proc },
+        ["@keyword.directive.define"] = { fg = darcula.pre_proc },
         ["@keyword.exception"] =        { fg = darcula.keyword },    -- For exception related keywords.
         ["@keyword.operator"] =         { fg = darcula.keyword }, -- For keyword operators like `and` or `or`.
         ["@keyword.function"] =         { fg = darcula.keyword }, -- For keywords used to define a fuction.
