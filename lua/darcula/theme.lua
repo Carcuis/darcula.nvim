@@ -212,6 +212,7 @@ theme.loadTreeSitter = function ()
 
     local treesitter = {
         ["@attribute"] =                { fg = darcula.decorator },
+        ["@attribute.builtin"] =        { fg = darcula.decorator },
         ["@boolean"] =                  { fg = darcula.keyword },    -- For booleans.
         ["@character"] =                { fg = darcula.string },    -- For characters.
         ["@character.special"] =        { fg = darcula.keyword },    -- For special characters.
