@@ -75,6 +75,9 @@ theme.loadSyntax = function ()
         ps1Function =           { link = "@function" },
         ps1Variable =           { fg = darcula.text },
 
+        zshFunction =           { fg = darcula.function_name },
+        zshVariableDef =        { fg = darcula.text },
+
         ["@keyword.import.python"] =        { link = "@keyword" },
         ["@variable.builtin.python"] =      { fg = darcula.python_self },
         ["@variable.parameter.python"] =    { fg = darcula.python_parameter },
