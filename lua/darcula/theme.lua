@@ -182,7 +182,7 @@ theme.loadEditor = function ()
         WinSeparator =          { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
         WinBar =                { fg = darcula.text, bg = darcula.bg, bold = true },
         WinBarNC =              { fg = darcula.comment, bg = darcula.bg },
-        FloatBorder =           { fg = darcula.hint, style = 'bold' },
+        FloatBorder =           { fg = darcula.cursorline, bold = true },
 
     }
 
