@@ -43,6 +43,12 @@ theme.loadSyntax = function ()
         Identifier =            { fg = darcula.fg },
         EnumMember =            { fg = darcula.constant, style = 'italic' },
 
+        DiagnosticError =       { fg = darcula.error },
+        DiagnosticWarn =        { fg = darcula.warning },
+        DiagnosticInfo =        { fg = darcula.info },
+        DiagnosticHint =        { fg = darcula.hint },
+        DiagnosticOk =          { fg = darcula.green },
+
         htmlLink =              { fg = darcula.link, style = "underline" },
         htmlH1 =                { fg = darcula.constant, style = "bold" },
         htmlH2 =                { fg = darcula.constant, style = "bold" },
