@@ -51,7 +51,7 @@ local darcula = {
     error =             '#bc3f3c',
     warning =           '#be9117',
     warning_bg =        '#52503a',
-    info =              '#756d56',
+    info =              '#84afcc',
     hint =              '#5896A6',
     link =              '#287bde',
 
