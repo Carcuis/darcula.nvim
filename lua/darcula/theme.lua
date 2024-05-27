@@ -326,8 +326,12 @@ theme.loadPlugins = function()
         CocHintHighlight =                      { bg = darcula.warning_bg },
         CocErrorVirtualText =                   { fg = darcula.error, bg = darcula.gutter },
         CocWarningVirtualText =                 { fg = darcula.warning, bg = darcula.gutter },
-        CocInfoVirtualText =                    { fg = darcula.hint, bg = darcula.gutter },
+        CocInfoVirtualText =                    { fg = darcula.info, bg = darcula.gutter },
         CocHintVirtualText =                    { fg = darcula.hint, bg = darcula.gutter },
+        CocErrorFloat =                         { fg = darcula.error },
+        CocWarningFloat =                       { fg = darcula.warning },
+        CocInfoFloat =                          { fg = darcula.info },
+        CocHintFloat =                          { fg = darcula.hint },
         CocHighlightText =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "text" references
         CocHighlightRead =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "read" references
         CocHighlightWrite =                     { bg = darcula.lsp_highlight.hl_bg_write }, -- used for highlighting "write" references
