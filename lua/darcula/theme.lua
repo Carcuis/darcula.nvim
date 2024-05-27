@@ -281,7 +281,10 @@ theme.loadTreeSitter = function ()
         ["@variable.parameter"] =       { fg = darcula.fg }, -- For parameters of a function.
         ["@comment"] =                  { fg = darcula.comment, italic = true },
         ["@comment.documentation"] =    { fg = darcula.special_comment, italic = true },
-        ["@comment.todo"] =             { fg = darcula.todo, style = 'bold,italic,reverse' }, -- For the keywords TODO FIXME and XXX.
+        ["@comment.error"] =            { fg = darcula.error, style = 'bold,italic,reverse' }, -- For the keywords ERROR FIXME and DEPRECATED.
+        ["@comment.warning"] =          { fg = darcula.warning, style = 'bold,italic,reverse' }, -- For the keywords WARNING FIX and HACK.
+        ["@comment.todo"] =             { fg = darcula.todo, style = 'bold,italic,reverse' }, -- For the keywords TODO and WIP.
+        ["@comment.note"] =             { fg = darcula.info, style = 'bold,italic,reverse' }, -- For the keywords NOTE INFO and XXX.
     }
 
     return treesitter
