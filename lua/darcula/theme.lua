@@ -125,6 +125,7 @@ theme.loadEditor = function ()
     local editor = {
         Normal =                { fg = darcula.fg, bg = darcula.bg },
         NormalFloat =           { fg = darcula.fg, bg = darcula.float_bg }, -- normal text and background color
+        FloatBorder =           { fg = darcula.virt_column, bg = darcula.float_bg, bold = true },
         ColorColumn =           { fg = darcula.none, bg = darcula.sidebar }, --  used for the columns set with 'colorcolumn'
         Conceal =               { fg = darcula.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
         Cursor =                { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- the character under the cursor
@@ -188,7 +189,6 @@ theme.loadEditor = function ()
         WinSeparator =          { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
         WinBar =                { fg = darcula.text, bg = darcula.bg, bold = true },
         WinBarNC =              { fg = darcula.comment, bg = darcula.bg },
-        FloatBorder =           { fg = darcula.cursorline, bold = true },
 
     }
 
