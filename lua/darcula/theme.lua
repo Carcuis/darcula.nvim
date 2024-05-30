@@ -468,6 +468,10 @@ theme.loadPlugins = function()
         ToggleTermNormalFloat =                 { bg = darcula.terminal_bg },
         ToggleTermFloatBorder =                 { fg = darcula.virt_column, bg = darcula.terminal_bg, bold = true },
 
+        -- Nvim Treesitter Context
+        TreesitterContext =                     { link = "NormalFloat" },
+        TreesitterContextLineNumber =           { fg = darcula.line_numbers, bg = darcula.float_bg },
+
     }
 
     return plugins
