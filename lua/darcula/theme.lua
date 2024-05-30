@@ -416,8 +416,8 @@ theme.loadPlugins = function()
 
         -- Scrollbar
         ScrollbarHandle =                       { bg = darcula.scrollbar },
-        ScrollbarCursor =                       { fg = darcula.bg, style = "bold" },
-        ScrollbarCursorHandle =                 { fg = darcula.bg, bg = darcula.scrollbar },
+        ScrollbarCursor =                       { fg = darcula.inlay_hint.fg, bg = darcula.scrollbar },
+        ScrollbarCursorHandle =                 { fg = darcula.inlay_hint.fg, bg = darcula.scrollbar },
         ScrollbarError =                        { fg = darcula.error, style = "bold" },
         ScrollbarErrorHandle =                  { fg = darcula.error, bg = darcula.scrollbar },
         ScrollbarHint =                         { fg = darcula.hint, style = "bold" },
