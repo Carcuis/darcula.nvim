@@ -338,6 +338,13 @@ theme.loadPlugins = function()
         CocMenuSel =                            { bg = darcula.active, style = 'bold' },
         CocInlayHint =                          { fg = darcula.inlay_hint.fg, bg = darcula.inlay_hint.bg },
 
+        -- Custom highlight, not original coc.nvim
+        CocNotification =                       { fg = darcula.disabled, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
+        CocErrorLualine =                       { fg = darcula.error, bg = darcula.float_bg },
+        CocWarningLualine =                     { fg = darcula.warning, bg = darcula.float_bg },
+        CocInfoLualine =                        { fg = darcula.info, bg = darcula.float_bg },
+        CocHintLualine =                        { fg = darcula.hint, bg = darcula.float_bg },
+
         CocSemType =                            { link = "@type" },
         CocSemTypeFunction =                    { link = "@function" },
         CocSemTypeMethod =                      { link = "@function" },
