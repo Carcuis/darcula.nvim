@@ -495,6 +495,8 @@ theme.loadPlugins = function()
         -- Bufferline
         BufferLineIndicatorSelected =           vim.g.transparent_background == 1 and { fg = darcula.disabled } or nil,
         BufferLineSeparator =                   vim.g.transparent_background == 1 and { fg = darcula.vertsplit.fg } or nil,
+        BufferLineTabSeparator =                vim.g.transparent_background == 1 and { fg = darcula.vertsplit.fg } or nil,
+        BufferLineTabSeparatorSelected =        vim.g.transparent_background == 1 and { fg = darcula.disabled } or nil,
 
     }
 
