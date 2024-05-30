@@ -19,6 +19,7 @@ local darcula = {
     dark_green =        '#364135',
 
     bg =                '#2b2b2b',
+    terminal_bg =       '#252525',
     bg_alt_1 =          '#303030',
     bg_alt_2 =          '#3a3a3a',
     fg =                '#a9b7c6',

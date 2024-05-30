@@ -463,6 +463,11 @@ theme.loadPlugins = function()
         -- Nvim Surround
         NvimSurroundHighlight =                 { link = "PmenuSel" },
 
+        -- Toggle Term (custom, not original)
+        ToggleTermNormal =                      { bg = darcula.terminal_bg },
+        ToggleTermNormalFloat =                 { bg = darcula.terminal_bg },
+        ToggleTermFloatBorder =                 { fg = darcula.virt_column, bg = darcula.terminal_bg, bold = true },
+
     }
 
     return plugins
