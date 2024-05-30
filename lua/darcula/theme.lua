@@ -479,6 +479,19 @@ theme.loadPlugins = function()
         TreesitterContext =                     { link = "NormalFloat" },
         TreesitterContextLineNumber =           { fg = darcula.line_numbers, bg = darcula.float_bg },
 
+        -- Nvim Notify
+        NotifyBackground =                      vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
+        NotifyERRORBorder =                     { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
+        NotifyWARNBorder =                      { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
+        NotifyINFOBorder =                      { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
+        NotifyDEBUGBorder =                     { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
+        NotifyTRACEBorder =                     { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
+        NotifyERRORBody =                       vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
+        NotifyWARNBody =                        vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
+        NotifyINFOBody =                        vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
+        NotifyDEBUGBody =                       vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
+        NotifyTRACEBody =                       vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
+
     }
 
     return plugins
