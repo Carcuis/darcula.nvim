@@ -103,11 +103,6 @@ local darcula = {
         change =        '#303c47',
     },
 
-    fold = {
-        fold_cl_fg =    '#8c8c8c',
-        fold_cl_bg =    '#3a3a3a',
-    },
-
     vertsplit = {
         fg =            '#313335',
         bg =            '#313335',
@@ -127,7 +122,6 @@ if vim.g.darcula_transparent == 1 then
     darcula.gutter =            'NONE'
     darcula.vertsplit.fg =      '#3c3f41'
     darcula.vertsplit.bg =      'NONE'
-    darcula.fold.fold_cl_bg =   'NONE'
 end
 
 return darcula

@@ -137,7 +137,7 @@ theme.loadEditor = function ()
         EndOfBuffer =           { fg = darcula.sidebar },
         ErrorMsg =              { fg = darcula.yellow },
         Folded =                { fg = darcula.disabled, bg = darcula.none, style = 'italic' },
-        FoldColumn =            { fg = darcula.fold.fold_cl_fg, bg = darcula.fold.fold_cl_bg },
+        FoldColumn =            { fg = darcula.line_numbers, bg = darcula.gutter },
         IncSearch =             { bg = darcula.incsearch },
         LineNr =                { fg = darcula.line_numbers, bg = darcula.gutter },
         CursorLineNr =          { fg = darcula.accent, bg = darcula.gutter },
