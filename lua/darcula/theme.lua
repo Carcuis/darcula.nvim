@@ -492,6 +492,10 @@ theme.loadPlugins = function()
         NotifyDEBUGBody =                       vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
         NotifyTRACEBody =                       vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
 
+        -- Bufferline
+        BufferLineIndicatorSelected =           vim.g.transparent_background == 1 and { fg = darcula.disabled } or nil,
+        BufferLineSeparator =                   vim.g.transparent_background == 1 and { fg = darcula.vertsplit.fg } or nil,
+
     }
 
     return plugins
