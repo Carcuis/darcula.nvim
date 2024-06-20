@@ -369,20 +369,20 @@ theme.loadPlugins = function()
         CocSemTypeModVariableDefaultLibrary =   { link = "@function.builtin" },
 
         -- GitGutter
-        GitGutterAdd =                          { fg = darcula.git.add, bg = darcula.gutter }, -- diff mode: Added line |diff.txt|
-        GitGutterChange =                       { fg = darcula.git.change, bg = darcula.gutter }, -- diff mode: Changed line |diff.txt|
-        GitGutterDelete =                       { fg = darcula.git.delete, bg = darcula.gutter }, -- diff mode: Deleted line |diff.txt|
+        GitGutterAdd =                          { fg = darcula.git.add, bg = darcula.gutter },
+        GitGutterChange =                       { fg = darcula.git.change, bg = darcula.gutter },
+        GitGutterDelete =                       { fg = darcula.git.delete, bg = darcula.gutter },
 
         -- GitSigns
-        GitSignsAdd =                           { fg = darcula.git.add, bg = darcula.gutter }, -- diff mode: Added line |diff.txt|
-        GitSignsAddNr =                         { fg = darcula.git.add_fg, bg = darcula.gutter }, -- diff mode: Added line |diff.txt|
-        GitSignsAddLn =                         { fg = darcula.git.none, bg = darcula.git.add }, -- diff mode: Added line |diff.txt|
-        GitSignsChange =                        { fg = darcula.git.change, bg = darcula.gutter }, -- diff mode: Changed line |diff.txt|
-        GitSignsChangeNr =                      { fg = darcula.git.change_fg, bg = darcula.gutter }, -- diff mode: Changed line |diff.txt|
-        GitSignsChangeLn =                      { fg = darcula.git.none, bg = darcula.git.change }, -- diff mode: Changed line |diff.txt|
-        GitSignsDelete =                        { fg = darcula.git.delete, bg = darcula.gutter }, -- diff mode: Deleted line |diff.txt|
-        GitSignsDeleteNr =                      { fg = darcula.git.delete_fg, bg = darcula.gutter }, -- diff mode: Deleted line |diff.txt|
-        GitSignsDeleteLn =                      { fg = darcula.git.none, bg = darcula.git.delete }, -- diff mode: Deleted line |diff.txt|
+        GitSignsAdd =                           { fg = darcula.git.add, bg = darcula.gutter },
+        GitSignsAddNr =                         { fg = darcula.git.add_fg, bg = darcula.gutter },
+        GitSignsAddLn =                         { fg = darcula.git.none, bg = darcula.git.add },
+        GitSignsChange =                        { fg = darcula.git.change, bg = darcula.gutter },
+        GitSignsChangeNr =                      { fg = darcula.git.change_fg, bg = darcula.gutter },
+        GitSignsChangeLn =                      { fg = darcula.git.none, bg = darcula.git.change },
+        GitSignsDelete =                        { fg = darcula.git.delete, bg = darcula.gutter },
+        GitSignsDeleteNr =                      { fg = darcula.git.delete_fg, bg = darcula.gutter },
+        GitSignsDeleteLn =                      { fg = darcula.git.none, bg = darcula.git.delete },
         GitSignsCurrentLineBlame =              { fg = darcula.disabled, style = "bold,italic" },
 
         -- Telescope
