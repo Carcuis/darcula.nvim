@@ -368,16 +368,6 @@ theme.loadPlugins = function()
         CocSemTypeModNamespaceDefaultLibrary =  { link = "@function.builtin" },
         CocSemTypeModVariableDefaultLibrary =   { link = "@function.builtin" },
 
-        -- Diff
-        diffAdded =                             { fg = darcula.green },
-        diffRemoved =                           { fg = darcula.red },
-        diffChanged =                           { fg = darcula.yellow },
-        diffOldFile =                           { style = "bold" },
-        diffNewFile =                           { style = "bold" },
-        diffFile =                              { style = "bold" },
-        diffLine =                              { fg = darcula.comment },
-        diffIndexLine =                         { fg = darcula.comment },
-
         -- GitGutter
         GitGutterAdd =                          { fg = darcula.git.add, bg = darcula.gutter }, -- diff mode: Added line |diff.txt|
         GitGutterChange =                       { fg = darcula.git.change, bg = darcula.gutter }, -- diff mode: Changed line |diff.txt|
@@ -412,14 +402,6 @@ theme.loadPlugins = function()
         WhichKeySeparator =                     { fg = darcula.number },
         -- WhichKeyFloating =                      { bg = darcula.float },
         -- WhichKeyFloat =                         { bg = darcula.float },
-
-        -- Sneak
-        Sneak =                                 { fg = darcula.bg, bg = darcula.accent },
-        SneakScope =                            { bg = darcula.selection },
-
-        -- Nvim dap
-        DapBreakpoint =                         { fg = darcula.red },
-        DapStopped =                            { fg = darcula.green },
 
         -- Scrollbar
         ScrollbarHandle =                       { bg = darcula.scrollbar },
