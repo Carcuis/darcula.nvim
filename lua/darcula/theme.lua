@@ -376,13 +376,17 @@ theme.loadPlugins = function()
         -- GitSigns
         GitSignsAdd =                           { fg = darcula.git.add, bg = darcula.gutter },
         GitSignsAddNr =                         { fg = darcula.git.add_fg, bg = darcula.gutter },
-        GitSignsAddLn =                         { fg = darcula.git.none, bg = darcula.git.add },
+        GitSignsAddLn =                         { bg = darcula.git.add },
+        GitSignsAddPreview =                    { fg = darcula.git.add_fg, bg = darcula.diff.add },
+        GitSignsAddInline =                     { reverse = true },
         GitSignsChange =                        { fg = darcula.git.change, bg = darcula.gutter },
         GitSignsChangeNr =                      { fg = darcula.git.change_fg, bg = darcula.gutter },
-        GitSignsChangeLn =                      { fg = darcula.git.none, bg = darcula.git.change },
+        GitSignsChangeLn =                      { bg = darcula.git.change },
         GitSignsDelete =                        { fg = darcula.git.delete, bg = darcula.gutter },
-        GitSignsDeleteNr =                      { fg = darcula.git.delete_fg, bg = darcula.gutter },
-        GitSignsDeleteLn =                      { fg = darcula.git.none, bg = darcula.git.delete },
+        GitSignsDeleteNr =                      { fg = darcula.git.delete, bg = darcula.gutter },
+        GitSignsDeleteLn =                      { bg = darcula.git.delete },
+        GitSignsDeletePreview =                 { fg = darcula.git.delete_fg, bg = darcula.diff.delete },
+        GitSignsDeleteInline =                  { fg = darcula.bg, bg = darcula.git.delete },
         GitSignsCurrentLineBlame =              { fg = darcula.disabled, style = "bold,italic" },
 
         -- Telescope
