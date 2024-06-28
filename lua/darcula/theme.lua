@@ -316,6 +316,9 @@ theme.loadPlugins = function()
         StartifySlash =                         { fg = darcula.disabled },
         StartifyFile =                          { fg = darcula.text, style = 'bold' },
 
+        -- highlighted yank
+        HighlightedyankRegion =                 { bg = darcula.diff.add },
+
         -- Coc
         CocErrorSign =                          { fg = darcula.error, bg = darcula.gutter },
         CocWarningSign =                        { fg = darcula.warning, bg = darcula.gutter },
