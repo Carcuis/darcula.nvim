@@ -128,6 +128,7 @@ theme.loadEditor = function ()
         FloatBorder =           { fg = darcula.virt_column, bg = darcula.float_bg, bold = true },
         ColorColumn =           { fg = darcula.none, bg = darcula.sidebar }, --  used for the columns set with 'colorcolumn'
         Conceal =               { fg = darcula.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
+        CurSearch =             { bg = darcula.incsearch, bold = true },
         Cursor =                { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- the character under the cursor
         CursorIM =              { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- like Cursor, but used when in IME mode
         Directory =             { fg = darcula.comment, bg = darcula.none }, -- directory names (and other special names in listings)
