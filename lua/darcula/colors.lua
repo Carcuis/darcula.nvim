@@ -83,6 +83,7 @@ local darcula = {
     lsp = {
         read  =         '#344134',
         write =         '#40332B',
+        operator =      '#5f8c8a',
     },
 
     git = {

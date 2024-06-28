@@ -360,6 +360,7 @@ theme.loadPlugins = function()
         CocSemTypeMacro =                       { link = "@function.macro" },
         CocSemTypeNamespace =                   { link = "@type" },
         CocSemTypeVariable =                    { link = "@variable" },
+        CocSemTypeOperator =                    { fg = darcula.lsp.operator },
 
         CocSemModDefaultLibrary =               { link = "@function.builtin" },
         CocSemTypeModFunctionDefaultLibrary =   { link = "@function.builtin" },
