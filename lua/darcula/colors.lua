@@ -70,8 +70,8 @@ local darcula = {
     python_self =       '#94558d',
 
     match_brace = {
-        fg =    '#ffef28',
-        bg =    '#3b514d',
+        fg =            '#ffef28',
+        bg =            '#3b514d',
     },
 
     statusline = {
@@ -80,9 +80,9 @@ local darcula = {
         c_bg =          '#313335',
     },
 
-    lsp_highlight = {
-        hl_bg_read  =   '#344134',
-        hl_bg_write =   '#40332B',
+    lsp = {
+        read  =         '#344134',
+        write =         '#40332B',
     },
 
     git = {

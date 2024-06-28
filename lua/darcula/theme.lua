@@ -336,9 +336,9 @@ theme.loadPlugins = function()
         CocWarningFloat =                       { fg = darcula.warning },
         CocInfoFloat =                          { fg = darcula.info },
         CocHintFloat =                          { fg = darcula.hint },
-        CocHighlightText =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "text" references
-        CocHighlightRead =                      { bg = darcula.lsp_highlight.hl_bg_read }, -- used for highlighting "read" references
-        CocHighlightWrite =                     { bg = darcula.lsp_highlight.hl_bg_write }, -- used for highlighting "write" references
+        CocHighlightText =                      { bg = darcula.lsp.read }, -- used for highlighting "text" references
+        CocHighlightRead =                      { bg = darcula.lsp.read }, -- used for highlighting "read" references
+        CocHighlightWrite =                     { bg = darcula.lsp.write }, -- used for highlighting "write" references
         CocMenuSel =                            { bg = darcula.active, style = 'bold' },
         CocInlayHint =                          { fg = darcula.inlay_hint.fg, bg = darcula.inlay_hint.bg },
 
