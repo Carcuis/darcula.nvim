@@ -126,6 +126,8 @@ theme.loadEditor = function ()
         Normal =                { fg = darcula.fg, bg = darcula.bg },
         NormalFloat =           { fg = darcula.fg, bg = darcula.float_bg }, -- normal text and background color
         FloatBorder =           { fg = darcula.virt_column, bg = darcula.float_bg, bold = true },
+        FloatTitle =            { fg = darcula.keyword, bg = darcula.float_bg, bold = true },
+        FloatFooter =           { fg = darcula.keyword, bg = darcula.float_bg, bold = true },
         ColorColumn =           { fg = darcula.none, bg = darcula.sidebar }, --  used for the columns set with 'colorcolumn'
         Conceal =               { fg = darcula.disabled }, -- placeholder characters substituted for concealed text (see 'conceallevel')
         CurSearch =             { bg = darcula.incsearch, bold = true },
