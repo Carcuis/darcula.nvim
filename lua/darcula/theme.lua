@@ -490,6 +490,12 @@ theme.loadPlugins = function()
         BufferLineTabSeparator =                vim.g.transparent_background == 1 and { fg = darcula.vertsplit.fg } or nil,
         BufferLineTabSeparatorSelected =        vim.g.transparent_background == 1 and { fg = darcula.disabled } or nil,
 
+        -- Nvim Dap (custom, not original)
+        DapBreakpoint =                         { fg = darcula.debug.break_point, bg = darcula.gutter },
+        DapBreakpointLine =                     { bg = darcula.debug.break_line },
+        DapStopped =                            { fg = darcula.debug.stop_sign, bg = darcula.gutter },
+        DapStoppedLine =                        { bg = darcula.debug.stop_line },
+
     }
 
     return plugins

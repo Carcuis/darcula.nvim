@@ -86,6 +86,13 @@ local darcula = {
         operator =      '#5f8c8a',
     },
 
+    debug = {
+        break_point =   '#db5c5c',
+        break_line =    '#3a2323',
+        stop_sign =     '#84afcc',
+        stop_line =     '#2d6099',
+    },
+
     git = {
         dirty_file =    '#5896a6',
         new_file =      '#d1675a',
