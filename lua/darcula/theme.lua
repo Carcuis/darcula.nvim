@@ -493,6 +493,8 @@ theme.loadPlugins = function()
         -- Nvim Dap (custom, not original)
         DapBreakpoint =                         { fg = darcula.debug.break_point, bg = darcula.gutter },
         DapBreakpointLine =                     { bg = darcula.debug.break_line },
+        DapLogPoint =                           { fg = darcula.debug.log_point, bg = darcula.gutter},
+        DapLogPointLine =                       { bg = darcula.debug.break_line },
         DapStopped =                            { fg = darcula.debug.stop_sign, bg = darcula.gutter },
         DapStoppedLine =                        { bg = darcula.debug.stop_line },
 
