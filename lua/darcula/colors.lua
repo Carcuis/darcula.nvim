@@ -88,6 +88,7 @@ local darcula = {
 
     debug = {
         break_point =   '#db5c5c',
+        bp_rejected =   '#ced0d6',
         break_line =    '#3a2323',
         log_point =     '#f2c55c',
         stop_sign =     '#84afcc',
