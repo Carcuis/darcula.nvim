@@ -85,8 +85,8 @@ theme.loadSyntax = function ()
         zshVariableDef =        { fg = darcula.text },
 
         ["@keyword.import.python"] =        { link = "@keyword" },
-        ["@variable.builtin.python"] =      { fg = darcula.python_self },
-        ["@variable.parameter.python"] =    { fg = darcula.python_parameter },
+        ["@variable.builtin.python"] =      { fg = darcula.syntax.python.self },
+        ["@variable.parameter.python"] =    { fg = darcula.syntax.python.parameter },
         ["@type.builtin.cpp"] =             { link = "@keyword" },
         ["@punctuation.delimiter.cpp"] =    { link = "@keyword" },
         ["@variable.builtin.vim"] =         { link = "@function.builtin" },
