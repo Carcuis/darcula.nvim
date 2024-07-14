@@ -79,6 +79,7 @@ theme.loadSyntax = function ()
         jsonStringMatch =       { fg = darcula.string },
 
         ps1Function =           { link = "@function" },
+        ps1Type =               { fg = darcula.syntax.powershell.type },
         ps1Variable =           { fg = darcula.text },
 
         zshFunction =           { fg = darcula.function_name },

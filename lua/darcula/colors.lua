@@ -72,6 +72,9 @@ local darcula = {
             parameter = '#aa4926',
             self =      '#94558d',
         },
+        powershell = {
+            type =      '#769aa5',
+        }
     },
 
     match_brace = {
