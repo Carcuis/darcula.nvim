@@ -139,6 +139,9 @@ theme.loadEditor = function ()
         DiffChange =            { bg = darcula.diff.change }, --  diff mode: Changed line
         DiffDelete =            { bg = darcula.diff.delete }, -- diff mode: Deleted line
         DiffText =              { bg = darcula.diff.text }, -- diff mode: Changed text within a changed line
+        Added =                 { fg = darcula.git.add_fg, bg = darcula.diff.add },
+        Changed =               { fg = darcula.git.change_fg, bg = darcula.diff.change },
+        Removed =               { fg = darcula.git.delete_fg, bg = darcula.diff.delete },
         EndOfBuffer =           { fg = darcula.sidebar },
         ErrorMsg =              { fg = darcula.yellow },
         Folded =                { fg = darcula.disabled, bg = darcula.none, style = 'italic' },
