@@ -494,6 +494,22 @@ theme.loadPlugins = function()
         BufferLineTabSeparator =                vim.g.transparent_background == 1 and { fg = darcula.vertsplit.fg } or nil,
         BufferLineTabSeparatorSelected =        vim.g.transparent_background == 1 and { fg = darcula.disabled } or nil,
 
+        -- Diffview
+        DiffviewNormal =                        { bg = darcula.sidebar },
+        DiffviewNonText =                       { fg = darcula.comment },
+        DiffviewFilePanelCounter =              { fg = darcula.comment, style = "bold" },
+        DiffviewFilePanelInsertions =           { fg = darcula.git.add_fg },
+        DiffviewFilePanelDeletions =            { fg = darcula.git.delete },
+        DiffviewFolderName =                    { fg = darcula.comment, style = "bold" },
+        DiffviewFolderSign =                    { fg = darcula.comment },
+        DiffviewStatusAdded =                   { fg = darcula.git.add_fg },
+        DiffviewStatusUntracked =               { fg = darcula.git.new_file },
+        DiffviewStatusModified =                { fg = darcula.git.change_fg },
+        DiffviewStatusRenamed =                 { fg = darcula.git.change_fg },
+        DiffviewStatusCopied =                  { fg = darcula.git.change_fg },
+        DiffviewStatusTypeChanged =             { fg = darcula.git.change_fg },
+        DiffviewStatusUnmerged =                { fg = darcula.git.change_fg },
+
         -- Nvim Dap (custom, not original)
         DapBreakpoint =                         { fg = darcula.debug.break_point, bg = darcula.gutter },
         DapBreakpointLine =                     { bg = darcula.debug.break_line },
