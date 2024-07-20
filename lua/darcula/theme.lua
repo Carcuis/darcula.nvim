@@ -135,10 +135,10 @@ theme.loadEditor = function ()
         Cursor =                { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- the character under the cursor
         CursorIM =              { fg = darcula.cursor, bg = darcula.none, style = 'reverse' }, -- like Cursor, but used when in IME mode
         Directory =             { fg = darcula.comment, bg = darcula.none }, -- directory names (and other special names in listings)
-        DiffAdd =               { fg = darcula.none, bg = darcula.diff.add }, -- diff mode: Added line
-        DiffChange =            { fg = darcula.none, bg = darcula.diff.change }, --  diff mode: Changed line
-        DiffDelete =            { fg = darcula.none, bg = darcula.diff.delete }, -- diff mode: Deleted line
-        DiffText =              { fg = darcula.none, bg = darcula.diff.text }, -- diff mode: Changed text within a changed line
+        DiffAdd =               { bg = darcula.diff.add }, -- diff mode: Added line
+        DiffChange =            { bg = darcula.diff.change }, --  diff mode: Changed line
+        DiffDelete =            { bg = darcula.diff.delete }, -- diff mode: Deleted line
+        DiffText =              { bg = darcula.diff.text }, -- diff mode: Changed text within a changed line
         EndOfBuffer =           { fg = darcula.sidebar },
         ErrorMsg =              { fg = darcula.yellow },
         Folded =                { fg = darcula.disabled, bg = darcula.none, style = 'italic' },
