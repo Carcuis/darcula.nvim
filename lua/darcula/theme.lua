@@ -509,6 +509,7 @@ theme.loadPlugins = function()
         DiffviewStatusCopied =                  { fg = darcula.git.change_fg },
         DiffviewStatusTypeChanged =             { fg = darcula.git.change_fg },
         DiffviewStatusUnmerged =                { fg = darcula.git.change_fg },
+        DiffviewStatusDeleted =                 { fg = darcula.git.delete },
 
         -- Nvim Dap (custom, not original)
         DapBreakpoint =                         { fg = darcula.debug.break_point, bg = darcula.gutter },
