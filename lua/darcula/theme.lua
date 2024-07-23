@@ -30,7 +30,7 @@ theme.loadSyntax = function ()
         Tag =                   { fg = darcula.tag }, -- you can use CTRL-] on this
         Delimiter =             { fg = darcula.keyword }, -- character that needs attention like , or .
         SpecialComment =        { fg = darcula.special_comment, style = 'italic' }, -- special things inside a comment
-        Debug =                 { fg = darcula.red }, -- debugging statements
+        Debug =                 { fg = darcula.debug.break_point }, -- debugging statements
         Underlined =            { fg = darcula.link, style = 'underline' }, -- text that stands out, HTML links
         Ignore =                { fg = darcula.disabled }, -- left blank, hidden
         Error =                 { fg = darcula.error, style = 'bold,underline' }, -- any erroneous construct
@@ -143,7 +143,7 @@ theme.loadEditor = function ()
         Changed =               { fg = darcula.git.change_fg, bg = darcula.diff.change },
         Removed =               { fg = darcula.git.delete_fg, bg = darcula.diff.delete },
         EndOfBuffer =           { fg = darcula.sidebar },
-        ErrorMsg =              { fg = darcula.yellow },
+        ErrorMsg =              { fg = darcula.warning },
         Folded =                { fg = darcula.disabled, bg = darcula.none, style = 'italic' },
         FoldColumn =            { fg = darcula.line_numbers, bg = darcula.gutter },
         IncSearch =             { bg = darcula.incsearch },
@@ -176,7 +176,7 @@ theme.loadEditor = function ()
         Title =                 { fg = darcula.pre_proc, style = 'bold' },
         Visual =                { fg = darcula.none, bg = darcula.selection },
         VisualNOS =             { fg = darcula.none, bg = darcula.selection },
-        WarningMsg =            { fg = darcula.yellow },
+        WarningMsg =            { fg = darcula.warning },
         WildMenu =              { fg = darcula.orange, bg = darcula.none, style = 'bold' },
         CursorColumn =          { fg = darcula.none, bg = darcula.cursorline },
         CursorLine =            { fg = darcula.none, bg = darcula.cursorline },
@@ -187,11 +187,11 @@ theme.loadEditor = function ()
         ReplacelMode =          { fg = darcula.red, bg = darcula.none, style = 'reverse' },
         VisualMode =            { fg = darcula.purple, bg = darcula.none, style = 'reverse' },
         CommandMode =           { fg = darcula.gray, bg = darcula.none, style = 'reverse' },
-        Warnings =              { fg = darcula.yellow },
+        Warnings =              { fg = darcula.warning },
         SignColumn =            { fg = darcula.fg, bg = darcula.gutter },
         healthError =           { fg = darcula.error },
         healthSuccess =         { fg = darcula.green },
-        healthWarning =         { fg = darcula.yellow },
+        healthWarning =         { fg = darcula.warning },
         VertSplit =             { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
         WinSeparator =          { fg = darcula.vertsplit.fg, bg = darcula.vertsplit.bg },
         WinBar =                { fg = darcula.text, bg = darcula.bg, bold = true },
