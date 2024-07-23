@@ -205,7 +205,7 @@ theme.loadTerminal = function ()
     vim.g.terminal_color_3 = darcula.yellow
     vim.g.terminal_color_4 = darcula.blue
     vim.g.terminal_color_5 = darcula.purple
-    vim.g.terminal_color_6 = darcula.paleblue
+    vim.g.terminal_color_6 = darcula.cyan
     vim.g.terminal_color_7 = darcula.gray
     vim.g.terminal_color_8 = darcula.black_lighter
     vim.g.terminal_color_9 = darcula.red_lighter
@@ -213,7 +213,7 @@ theme.loadTerminal = function ()
     vim.g.terminal_color_11 = darcula.yellow_lighter
     vim.g.terminal_color_12 = darcula.blue_lighter
     vim.g.terminal_color_13 = darcula.purple_lighter
-    vim.g.terminal_color_14 = darcula.cyan
+    vim.g.terminal_color_14 = darcula.cyan_lighter
     vim.g.terminal_color_15 = darcula.white
 
 end
