@@ -113,6 +113,7 @@ theme.loadSyntax = function ()
         ["@punctuation.delimiter.jsonc"] =  { fg = darcula.keyword },
         ["@keyword.json5"] =                { fg = darcula.constant },
         ["@variable.powershell"] =          { fg = darcula.text },
+        ["@variable.parameter.vimdoc"] =    { fg = darcula.keyword },
 
     }
 
