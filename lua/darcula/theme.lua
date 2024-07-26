@@ -396,6 +396,15 @@ theme.loadPlugins = function()
         GitSignsDeletePreview =                 { fg = darcula.git.delete_fg, bg = darcula.diff.delete },
         GitSignsDeleteInline =                  { fg = darcula.bg, bg = darcula.git.delete },
         GitSignsCurrentLineBlame =              { fg = darcula.disabled, style = "bold,italic" },
+        GitSignsStagedAdd =                     { fg = darcula.diff.add, bg = darcula.gutter },
+        GitSignsStagedAddNr =                   { fg = darcula.git.add_fg, bg = darcula.gutter },
+        GitSignsStagedAddLn =                   { bg = darcula.diff.add },
+        GitSignsStagedChange =                  { fg = darcula.diff.change, bg = darcula.gutter },
+        GitSignsStagedChangeNr =                { fg = darcula.git.change_fg, bg = darcula.gutter },
+        GitSignsStagedChangeLn =                { bg = darcula.diff.change },
+        GitSignsStagedDelete =                  { fg = darcula.diff.delete, bg = darcula.gutter },
+        GitSignsStagedDeleteNr =                { fg = darcula.git.delete, bg = darcula.gutter },
+        GitSignsStagedDeleteLn =                { bg = darcula.diff.delete },
 
         -- Telescope
         TelescopeTitle =                        { fg = darcula.keyword, bold = true },
