@@ -535,6 +535,11 @@ theme.loadPlugins = function()
         RenderMarkdownBullet =                  { link = "@markup.list" },
         RenderMarkdownCode =                    { bg = darcula.terminal_bg },
         RenderMarkdownCodeInline =              { link = "@markup.raw.markdown_inline" },
+        RenderMarkdownDash =                    { fg = darcula.virt_column },
+        RenderMarkdownQuote =                   { fg = darcula.comment },
+        RenderMarkdownTableHead =               { fg = darcula.keyword },
+        RenderMarkdownTableRow =                { fg = darcula.comment },
+        RenderMarkdownTodo =                    { fg = darcula.keyword },
 
     }
 
