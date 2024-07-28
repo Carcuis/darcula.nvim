@@ -531,6 +531,11 @@ theme.loadPlugins = function()
         DapStopped =                            { fg = darcula.debug.stop_sign, bg = darcula.gutter },
         DapStoppedLine =                        { bg = darcula.debug.stop_line },
 
+        -- markdown.nvim
+        RenderMarkdownBullet =                  { link = "@markup.list" },
+        RenderMarkdownCode =                    { bg = darcula.terminal_bg },
+        RenderMarkdownCodeInline =              { link = "@markup.raw.markdown_inline" },
+
     }
 
     return plugins
