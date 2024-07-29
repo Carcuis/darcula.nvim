@@ -114,6 +114,12 @@ theme.loadSyntax = function ()
         ["@keyword.json5"] =                { fg = darcula.constant },
         ["@variable.powershell"] =          { fg = darcula.text },
         ["@variable.parameter.vimdoc"] =    { fg = darcula.keyword },
+        ["@operator.regex"] =               { fg = darcula.lsp.operator },
+        ["@punctuation.bracket.regex"] =    { fg = darcula.number },
+        ["@punctuation.delimiter.regex"] =  { fg = darcula.keyword },
+        ["@string.escape.regex"] =          { fg = darcula.function_builtin },
+        ["@string.regexp.regex"] =          { fg = darcula.keyword },
+        ["@variable.builtin.regex"] =       { fg = darcula.function_builtin },
 
     }
 
