@@ -52,7 +52,7 @@ local darcula = {
     warning =           '#be9117',
     warning_bg =        '#52503a',
     info =              '#84afcc',
-    hint =              '#5896A6',
+    hint =              '#5896a6',
     link =              '#287bde',
 
     constant =          '#9876aa',
@@ -89,7 +89,7 @@ local darcula = {
 
     lsp = {
         read  =         '#344134',
-        write =         '#40332B',
+        write =         '#40332b',
         operator =      '#5f8c8a',
     },
 

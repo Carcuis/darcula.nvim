@@ -239,10 +239,10 @@ theme.loadTreeSitter = function ()
         ["@number.float"] =             { fg = darcula.number },    -- For floats.
         ["@operator"] =                 { fg = darcula.fg }, -- For any operator: `+`, but also `->` and `*` in C.
         ["@property"] =                 { fg = darcula.constant }, -- Same as `@variable.member`.
-        ["@punctuation"] =              { fg = darcula.keyword }, -- For punctutation.
+        ["@punctuation"] =              { fg = darcula.keyword }, -- For punctuation.
         ["@punctuation.bracket"] =      { fg = darcula.fg }, -- For brackets and parens.
         ["@punctuation.delimiter"] =    { fg = darcula.fg }, -- For delimiters ie: `.`
-        ["@punctuation.special"] =      { fg = darcula.keyword }, -- For special punctutation that does not fall in the catagories before.
+        ["@punctuation.special"] =      { fg = darcula.keyword }, -- For special punctuation that does not fall in the catagories before.
         ["@string"] =                   { fg = darcula.string },    -- For strings.
         ["@string.documentation"] =     { fg = darcula.special_comment, italic = true },    -- For documentation.
         ["@string.regexp"] =            { fg = darcula.number }, -- For regexes.
