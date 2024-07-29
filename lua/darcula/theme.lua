@@ -251,7 +251,7 @@ theme.loadTreeSitter = function ()
         ["@punctuation.special"] =      { fg = darcula.keyword }, -- For special punctuation that does not fall in the catagories before.
         ["@string"] =                   { fg = darcula.string },    -- For strings.
         ["@string.documentation"] =     { fg = darcula.special_comment, italic = true },    -- For documentation.
-        ["@string.regexp"] =            { fg = darcula.number }, -- For regexes.
+        ["@string.regexp"] =            { fg = darcula.text }, -- For regexes.
         ["@string.escape"] =            { fg = darcula.keyword }, -- For escape characters within a string.
         ["@string.special"] =           { fg = darcula.special_comment },
         ["@string.special.symbol"] =    { fg = darcula.keyword },
