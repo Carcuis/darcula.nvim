@@ -547,6 +547,16 @@ theme.loadPlugins = function()
         RenderMarkdownTableRow =                { fg = darcula.comment },
         RenderMarkdownTodo =                    { fg = darcula.keyword },
 
+        -- Dap-breakpoints
+        DapBreakpointVirt =                     { fg = darcula.debug.break_point },
+        DapBreakpointVirtPrefix =               { fg = darcula.debug.break_point },
+        DapLogPointVirt =                       { fg = darcula.string },
+        DapLogPointVirtPrefix =                 { fg = darcula.string },
+        DapConditionalPointVirt =               { fg = darcula.info },
+        DapConditionalPointVirtPrefix =         { fg = darcula.info },
+        DapHitConditionPointVirt =              { fg = darcula.hint },
+        DapHitConditionPointVirtPrefix =        { fg = darcula.hint },
+
     }
 
     return plugins
