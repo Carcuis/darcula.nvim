@@ -541,7 +541,7 @@ theme.loadPlugins = function()
 
         -- markdown.nvim
         RenderMarkdownBullet =                  { link = "@markup.list" },
-        RenderMarkdownCode =                    { bg = darcula.terminal_bg },
+        RenderMarkdownCode =                    { bg = darcula.bg_alt_1 },
         RenderMarkdownCodeInline =              { link = "@markup.raw.markdown_inline" },
         RenderMarkdownDash =                    { fg = darcula.virt_column },
         RenderMarkdownQuote =                   { fg = darcula.comment },
