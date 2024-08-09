@@ -320,13 +320,6 @@ theme.loadPlugins = function()
 
     local plugins = {
 
-        -- startify
-        StartifyBracket =                       { fg = darcula.disabled },
-        StartifyHeader =                        { fg = darcula.hint, style = 'bold' },
-        StartifyNumber =                        { fg = darcula.number, style = 'bold' },
-        StartifySlash =                         { fg = darcula.disabled },
-        StartifyFile =                          { fg = darcula.text, style = 'bold' },
-
         -- highlighted yank
         HighlightedyankRegion =                 { bg = darcula.diff.add },
 
@@ -562,6 +555,22 @@ theme.loadPlugins = function()
     }
 
     return plugins
+
+end
+
+theme.preLoad = function()
+    -- Groups loaded before async highlighting
+
+    local groups = {
+        -- startify
+        StartifyBracket =                       { fg = darcula.disabled },
+        StartifyHeader =                        { fg = darcula.hint, style = 'bold' },
+        StartifyNumber =                        { fg = darcula.number, style = 'bold' },
+        StartifySlash =                         { fg = darcula.disabled },
+        StartifyFile =                          { fg = darcula.text, style = 'bold' },
+    }
+
+    return groups
 
 end
 

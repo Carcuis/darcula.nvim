@@ -68,6 +68,12 @@ function util.load()
         util.highlight(group, colors)
     end
 
+    -- load highlights before async loading
+    local pre_load = darcula.preLoad()
+    for group, colors in pairs(pre_load) do
+        util.highlight(group, colors)
+    end
+
     -- load the rest later ( lsp, treesitter, plugins )
     async:send()
 
