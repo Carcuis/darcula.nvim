@@ -121,6 +121,7 @@ theme.loadSyntax = function ()
         ["@string.escape.regex"] =          { fg = darcula.function_builtin },
         ["@string.regexp.regex"] =          { fg = darcula.keyword },
         ["@variable.builtin.regex"] =       { fg = darcula.function_builtin },
+        ["@markup.heading.git_config"] =    { link = "@type" }
 
     }
 
