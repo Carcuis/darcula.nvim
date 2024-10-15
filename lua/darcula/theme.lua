@@ -121,7 +121,9 @@ theme.loadSyntax = function ()
         ["@string.escape.regex"] =          { fg = darcula.function_builtin },
         ["@string.regexp.regex"] =          { fg = darcula.keyword },
         ["@variable.builtin.regex"] =       { fg = darcula.function_builtin },
-        ["@markup.heading.git_config"] =    { link = "@type" }
+        ["@markup.heading.git_config"] =    { link = "@type" },
+        ["@punctuation.bracket.gitignore"] =        { link = "@punctuation.bracket.regex" },
+        ["@punctuation.delimiter.gitignore"] =      { fg = darcula.keyword },
 
     }
 
@@ -257,6 +259,7 @@ theme.loadTreeSitter = function ()
         ["@string.regexp"] =            { fg = darcula.text }, -- For regexes.
         ["@string.escape"] =            { fg = darcula.keyword }, -- For escape characters within a string.
         ["@string.special"] =           { fg = darcula.special_comment },
+        ["@string.special.path"] =      { fg = darcula.text },
         ["@string.special.symbol"] =    { fg = darcula.keyword },
         ["@type"] =                     { fg = darcula.identifier },    -- For types.
         ["@type.builtin"] =             { fg = darcula.function_builtin },    -- For builtin types.
