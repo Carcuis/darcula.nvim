@@ -186,6 +186,8 @@ theme.loadEditor = function ()
         TabLineFill =           { fg = darcula.fg },
         TablineSel =            { fg = darcula.bg, bg = darcula.accent },
         Tabline =               { fg = darcula.fg },
+        TermCursor =            { fg = darcula.cursor, style = 'reverse' },
+        TermCursorNC =          { fg = darcula.text, style = 'reverse' },
         Title =                 { fg = darcula.pre_proc, style = 'bold' },
         Visual =                { fg = darcula.none, bg = darcula.selection },
         VisualNOS =             { fg = darcula.none, bg = darcula.selection },
