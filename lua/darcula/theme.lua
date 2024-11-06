@@ -557,6 +557,9 @@ theme.loadPlugins = function()
         DapHitConditionPointVirt =              { fg = darcula.hint },
         DapHitConditionPointVirtPrefix =        { fg = darcula.hint },
 
+        -- Helpview
+        HelpviewMentionlink =                   { fg = darcula.hint, bg = darcula.bg_alt_1 },
+
     }
 
     return plugins
