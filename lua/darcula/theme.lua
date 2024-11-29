@@ -560,6 +560,12 @@ theme.loadPlugins = function()
         -- Helpview
         HelpviewMentionlink =                   { fg = darcula.hint, bg = darcula.bg_alt_1 },
 
+        -- Quicker
+        qfSeparatorLeft =                       { fg = darcula.vertsplit.fg },
+        qfSeparatorRight =                      { fg = darcula.vertsplit.fg },
+        QuickFixHeaderHard =                    { fg = darcula.black_lighter },
+        QuickFixHeaderSoft =                    { fg = darcula.black_lighter },
+
     }
 
     return plugins
