@@ -491,7 +491,7 @@ theme.loadPlugins = function()
         TreesitterContextLineNumber =           { fg = darcula.line_numbers, bg = darcula.float_bg },
 
         -- Nvim Notify
-        NotifyBackground =                      vim.g.darcula_transparent == 1 and { bg = darcula.float_bg } or nil,
+        NotifyBackground =                      { bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
         NotifyERRORBorder =                     { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
         NotifyWARNBorder =                      { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
         NotifyINFOBorder =                      { fg = darcula.virt_column, bg = vim.g.darcula_transparent == 0 and darcula.bg or darcula.float_bg },
