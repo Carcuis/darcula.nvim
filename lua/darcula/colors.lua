@@ -30,7 +30,6 @@ local darcula = {
     menu =              '#46484a',
     menu_scroll_bar =   '#616263',
     active =            '#113a5c',
-    border =            '#414863',
     line_numbers =      '#606366',
     search =            '#32593d',
     incsearch =         '#155221',
