@@ -569,6 +569,10 @@ theme.loadPlugins = function()
         QuickFixHeaderHard =                    { fg = darcula.black_lighter },
         QuickFixHeaderSoft =                    { fg = darcula.black_lighter },
 
+        -- Grug Far
+        GrugFarInputLabel =                     { fg = darcula.keyword },
+        GrugFarResultsNumberLabel =             { fg = darcula.comment },
+
     }
 
     return plugins
