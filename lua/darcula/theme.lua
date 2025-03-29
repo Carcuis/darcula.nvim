@@ -478,7 +478,7 @@ theme.loadPlugins = function()
         DropBarHover =                          { bg = darcula.cursorline },
         DropBarMenuHoverEntry =                 { bg = darcula.menu },
         DropBarMenuHoverIcon =                  { bg = darcula.active },
-        DropBarMenuHoverSymbol =                { bg = darcula.active },
+        DropBarMenuHoverSymbol =                { bold = true },
         DropBarPreview =                        { bg = darcula.cursorline },
 
         -- Nvim Surround
