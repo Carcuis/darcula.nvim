@@ -161,7 +161,7 @@ theme.loadEditor = function ()
         FoldColumn =            { fg = darcula.line_numbers, bg = darcula.gutter },
         IncSearch =             { bg = darcula.incsearch },
         LineNr =                { fg = darcula.line_numbers, bg = darcula.gutter },
-        CursorLineNr =          { fg = darcula.accent, bg = darcula.gutter },
+        CursorLineNr =          { fg = darcula.fg, bg = darcula.gutter },
         MatchParen =            { fg = darcula.match_brace.fg, bg = darcula.match_brace.bg, style = 'bold' },
         ModeMsg =               { fg = darcula.comment, style = 'italic' },
         MoreMsg =               { fg = darcula.hint, style = 'bold' },
@@ -185,7 +185,7 @@ theme.loadEditor = function ()
         StatusLineTerm =        { fg = darcula.fg, bg = darcula.menu },
         StatusLineTermNC =      { fg = darcula.text, bg = darcula.disabled },
         TabLineFill =           { fg = darcula.fg },
-        TablineSel =            { fg = darcula.bg, bg = darcula.accent },
+        TablineSel =            { fg = darcula.bg, bg = darcula.fg },
         Tabline =               { fg = darcula.fg },
         TermCursor =            { fg = darcula.cursor, style = 'reverse' },
         Title =                 { fg = darcula.pre_proc, style = 'bold' },
@@ -427,7 +427,7 @@ theme.loadPlugins = function()
         TelescopeNormal =                       { fg = darcula.fg, bg = darcula.float_bg },
 
         -- WhichKey
-        -- WhichKey =                              { fg = darcula.accent , style = 'bold'},
+        -- WhichKey =                              { fg = darcula.fg , style = 'bold'},
         -- WhichKeyGroup =                         { fg = darcula.text },
         -- WhichKeyDesc =                          { fg = darcula.blue, style = 'italic' },
         WhichKeySeparator =                     { fg = darcula.number },
