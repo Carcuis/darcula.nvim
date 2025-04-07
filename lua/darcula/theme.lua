@@ -573,6 +573,11 @@ theme.loadPlugins = function()
         GrugFarInputLabel =                     { fg = darcula.keyword },
         GrugFarResultsNumberLabel =             { fg = darcula.comment },
 
+        -- CsvView
+        CsvViewDelimiter =                      { fg = darcula.gutter, bg = darcula.gutter },
+        CsvViewStickyHeaderSeparator =          { fg = darcula.disabled, bg = darcula.gutter },
+        CsvViewHeaderLine =                     { bg = darcula.gutter },
+
     }
 
     return plugins
