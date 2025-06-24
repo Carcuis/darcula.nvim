@@ -578,6 +578,11 @@ theme.loadPlugins = function()
         CsvViewStickyHeaderSeparator =          { fg = darcula.disabled, bg = darcula.gutter },
         CsvViewHeaderLine =                     { bg = darcula.gutter },
 
+        -- Log highlight
+        logTime =                               { link = "DiagnosticHint" },
+        logTimeAMPM =                           { link = "Type" },
+        logTimeZone =                           { link = "Type" },
+
     }
 
     return plugins
