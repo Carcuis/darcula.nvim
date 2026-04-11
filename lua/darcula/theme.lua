@@ -48,6 +48,7 @@ theme.loadSyntax = function ()
         DiagnosticInfo =        { fg = darcula.info },
         DiagnosticHint =        { fg = darcula.hint },
         DiagnosticOk =          { fg = darcula.green },
+        OkMsg =                 { fg = darcula.green },
 
         htmlLink =              { fg = darcula.link, style = "underline" },
         htmlH1 =                { fg = darcula.constant, style = "bold" },
