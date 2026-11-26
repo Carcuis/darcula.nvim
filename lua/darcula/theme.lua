@@ -441,6 +441,7 @@ theme.loadPlugins = function()
         ScrollbarTrack =                        { bg = darcula.bg },
         ScrollbarThumb =                        { bg = darcula.scrollbar },
         ScrollbarThumbPressed =                 { bg = darcula.sidebar },
+        ScrollbarCursor =                       { fg = darcula.inlay_hint.fg },
         ScrollbarCursorThumb =                  { fg = darcula.inlay_hint.fg, bg = darcula.scrollbar },
         ScrollbarCursorThumbPressed =           { fg = darcula.inlay_hint.fg, bg = darcula.sidebar },
         ScrollbarMinimapViewport =              { bg = darcula.menu },
